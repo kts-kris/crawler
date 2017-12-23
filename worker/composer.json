@@ -1,0 +1,13 @@
+{
+    "name"  : "workerman/json-rpc",
+    "autoload": {
+        "classmap": ["vendor/components/"]
+    },
+    "type"  : "project",
+    "keywords": ["json","rpc"],
+    "homepage": "http://www.workerman.net",
+    "license" : "MIT",
+    "require": {
+        "workerman/statistics" : ">=1.0.0"
+    }
+}

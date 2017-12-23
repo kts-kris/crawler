@@ -1,0 +1,537 @@
+
+<!doctype html>
+<html>
+<head>
+    <link rel="shortcut icon" href="http://logo.www.sogou.com/images/logo2014/new/favicon.ico" type="image/x-icon">
+    <link href="/logo-safari.png?v=20170315" id="apple-touch-icon" rel="apple-touch-icon-precomposed"/>
+    <link href="https://www.sogou.com/sug/css/m3.min.v.7.css" rel="stylesheet" type="text/css">
+    <link href="/new/pc/css/weixin-public-new.min.css?v=20170315" rel="stylesheet" type="text/css">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta content="width=device-width,initial-scale=1.0" id="vp" name="viewport">
+    <title>医药的相关微信公众号 – 搜狗微信搜索</title>
+    
+    <script>
+        var sst = {h_s :(new Date()).getTime()};
+        var newpage = 1;
+        var passportUserId = "";
+        var oldQuery = "医药";
+        var gbkQuery = "%D2%BD%D2%A9";
+        var uuid = "a93f2abb-6629-446c-8cb5-68ba42495cfa";
+        var keywords_string = "医药";
+        var sab = "8";
+        var keywords = oldQuery.split(' ');
+        var now = 1514014489405;
+        var idc = "sjs";
+        var clientIp = "60.10.115.179";
+        var isIpad = false;
+        //var article_anti_url = "";
+    </script>
+    <script>
+        //以下为动态的全局 js，防止外部网站通过 window.opener.location 篡改我们的页面，以后不要通过 window.location 获取当前地址，只能用 document.location
+        
+    </script>
+    <script src="/js/jquery-1.11.0.min.js" charset="gbk"></script>
+    <script src="/js/lib/juicer-min.js"></script>
+    <script src="/new/weixin/js/common.min.js?v=20170228"></script>
+    <script src="/new/pc/js/common.min.js?v=20170626"></script>
+    <script>
+        var uigs_para = {
+            "uigs_productid": "vs_web",
+            "terminal"      : "web",
+            "vstype"        : "weixin",
+            "pagetype"      : "result",
+            "channel"       : "result_account",
+            "s_from"        : "input",
+            "sourceid"      : "",
+            "type"          : "weixin_search_pc",
+            "uigs_cookie"   : "SUID,sct",
+            "uuid"          : "a93f2abb-6629-446c-8cb5-68ba42495cfa",
+            "query"         : "医药",
+            "weixintype"    : "1",
+            "exp_status"    : "null",
+            "exp_id_list"   : "null",
+            "wuid"          : "",
+            "snuid"         : "7DBEC7F2CEC8AD323A1F05F3CE02999E",
+            "rn"            : 1,
+            "login"         : passportUserId ? "1" : "0",
+            "page"          : "10"
+        };
+    </script>
+</head>
+<body>
+    
+
+<!--start header-->
+<div class="header-box">
+    
+    <div class="login-info">
+        <a id="top_login" href="javascript:void(0);" uigs="home_login_top">登录</a>
+    </div>
+
+    <div class="header" id="scroll-header">
+        <a title="回到搜狗首页" href="/" name="scroll-nav" class="logo" uigs="home"></a>
+        <ul class="searchnav" name="scroll-nav">
+            <li><a id="sogou_xinwen" href="http://news.sogou.com/news?ie=utf8&p=40230447&query=医药" onclick="navBar(this,'query=');" uigs="nav_xinwen">新闻</a></li>
+            <li><a id="sogou_wangye" href="http://www.sogou.com/web?ie=utf8&query=医药" onclick="navBar(this,'query=');" uigs="nav_wangye">网页</a></li>
+            <li class="cur"><a href="javascript:void(0)">微信</a></li>
+            <li><a id="sogou_zhihu" href="http://zhihu.sogou.com/zhihu?ie=utf8&p=73351201&query=医药" onclick="navBar(this,'query=')" uigs="nav_zhihu">知乎</a></li>
+            <li><a id="sogou_tupian" href="http://pic.sogou.com/pics?ie=utf8&p=40230504&query=医药" onclick="navBar(this,'query=')" uigs="nav_tupian">图片</a></li>
+            <li><a id="sogou_shipin" href="http://v.sogou.com/v?ie=utf8&p=40230608&query=医药" onclick="navBar(this,'query=')" uigs="nav_shipin">视频</a></li>
+            <li><a id="sogou_mingyi" href="http://mingyi.sogou.com/mingyi?ie=utf8&query=医药" onclick="navBar(this,'query=')" uigs="nav_mingyi">明医</a></li>
+            <li><a id="sogou_yingwen" href="http://english.sogou.com/english?b_o_e=1&ie=utf8&query=医药" onclick="navBar(this,'query=')" uigs="nav_yingwen">英文</a></li>
+            <li><a id="sogou_wenwen" href="http://wenwen.sogou.com/s/?ch=weixinsearch&w=医药" data-index="http://wenwen.sogou.com/?ch=weixinsearch" onclick="navBar(this,'w=')" uigs="nav_wenwen">问问</a></li>
+            <li><a id="sogou_xueshu" href="http://scholar.sogou.com/xueshu?ie=utf-8&query=医药" onclick="navBar(this,'query=')" uigs="nav_xueshu">学术</a></li>
+            <li><a id="top_more" href="http://www.sogou.com/docs/more.htm?v=1" target="_blank" uigs="nav_more">更多>></a></li>
+        </ul>
+        
+
+<form name="searchForm" action="/weixin">
+    <div class="querybox">
+        <div class="qborder">
+            <div class="qborder2">
+                <input type="hidden" name="type" value="1"/>
+                <input type="hidden" name="s_from" value="input"/>
+                <input type="text" class="query" name="query" id="query" ov="医药" value="医药" autocomplete="off"/>
+                
+                    <input type="hidden" name="ie" value="utf8"/>
+                
+                <a href="javascript:void(0)" class="qreset2" name="reset" uigs="search_reset"></a>
+            </div>
+        </div>
+        <input type="button" value="搜文章" class="swz" onclick="search(this,2)" uigs="search_article"/>
+        <input type="button" value="搜公众号" class="swz2" onclick="search(this,1)" uigs="search_account"/>
+        <input type="hidden" name="_sug_" value="n"/>
+        <input type="hidden" name="_sug_type_" value=""/>
+    </div>
+</form>
+    </div>
+</div>
+<!--end header-->
+    
+    <div class="wrapper" id="wrapper">
+        <div class="main-left" id="main">
+            
+<div class="dy-pop2 dy-pop5 float" id="share_box" style="display: none">
+    <a href="javascript:void(0)" class="close" data-except="1" uigs="other_float_share_close"></a>
+    <div class="fxico-box">
+        <a href="javascript:void(0)" class="sina" data-except="1" uigs="other_float_share_sina"></a>
+        <a href="javascript:void(0)" class="weixin" data-except="1" uigs="other_float_share_weixin"></a>
+        <a href="javascript:void(0)" class="zone" target="_blank" data-except="1" uigs="other_float_share_zone"></a>
+        <a href="javascript:void(0)" class="tieba" target="_blank" data-except="1" uigs="other_float_share_tieba"></a>
+        <a href="javascript:void(0)" class="tx" target="_blank" data-except="1" uigs="other_float_share_tx"></a>
+        <a href="javascript:void(0)" class="renren" target="_blank" data-except="1" uigs="other_float_share_renren"></a>
+        <a href="javascript:void(0)" class="douban" target="_blank" data-except="1" uigs="other_float_share_douban"></a>
+        <a href="javascript:void(0)" class="qq" target="_blank" data-except="1" uigs="other_float_share_qq"></a>
+    </div>
+</div>
+
+
+<div class="dy-pop2 dy-pop5 float" id="erweima_box" style="display: none"></div>
+<script type="text/template" id="erweima_tpl">
+    <a href="javascript:void(0)" class="close" data-except="1" uigs="other_float_weixin_close"></a>
+    <div class="fxico-box2">微信扫一扫关注<br/><img width="104" height="104" src="${imgsrc}"/></div>
+</script>
+            
+
+<script>
+    //高级工具参数对象
+    var toolParas = {
+        tsn : '0',
+        ft : '',
+        et : '',
+        interation : '',
+        wxid : '',
+        usip : ''
+    };
+    var from_tool = '0';
+</script>
+<div class="wx-topbox">
+    <div class="all-time">
+        <div class="all-time-y2 ">
+            <div class="all-time-y all-time-y-v1" id="text">
+                以下内容来自微信公众号
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="news-box">
+    
+<ul class="news-list2">
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_0" d="oIWsFtyS6v-IMoL9xtLBD0jYz98o">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_0" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=lfuytsdeQhUDweUqi7mGQaCxNQvDsdFGX-sGzXAlew59ldGwRgN4fRZNbEUXDUkYELEw7*wYjv*-vyypQiH*ig=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtyS6v-IMoL9xtLBD0jYz98o" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_0" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=lfuytsdeQhUDweUqi7mGQaCxNQvDsdFGX-sGzXAlew59ldGwRgN4fRZNbEUXDUkYELEw7*wYjv*-vyypQiH*ig==">河南<em><!--red_beg-->医药<!--red_end--></em>观察南阳热点</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">gh_ba3a4aaaa3b0</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=8Sbfj28pUGO2ZV7TSiyYhj11Ts*LGOP0pgQZVK*IqsI36YQIVAGmxIJ6wERNRpiY61LHPjaFQu-P2kY7ZMRmxLe2R1nN1CfUqzfjJHIsdUk=" data-id="oIWsFtyS6v-IMoL9xtLBD0jYz98o" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=8Sbfj28pUGO2ZV7TSiyYhj11Ts*LGOP0pgQZVK*IqsI36YQIVAGmxIJ6wERNRpiY61LHPjaFQu-P2kY7ZMRmxLe2R1nN1CfUqzfjJHIsdUk=',4,'oIWsFtyS6v-IMoL9xtLBD0jYz98o')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtyS6v-IMoL9xtLBD0jYz98o" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>发布南阳<em><!--red_beg-->医药<!--red_end--></em>卫生热点观察信息</dd>
+</dl>
+<dl>
+<dt>最近文章：</dt>
+<dd>
+<a target="_blank" uigs="account_article_0" href="http://mp.weixin.qq.com/s?src=11&amp;timestamp=1514014489&amp;ver=591&amp;signature=cFXGhhEFr5pakE0Le6s*geDOfMYmw9KrvbQBE-a2Jox4SaMnU02bG1hBOOe7KdpfDkXPzSWGSzhJf1YcAnTG6o0sbHXAddwOIHS-4v60vFtLlZxJAy0hUpFN8RB6QF61&amp;new=1">拍案惊奇南阳孤寡老人缅甸历险 辗转返乡从命悬一线到转危为安</a><span><script>document.write(timeConvert('1503821777'))</script></span>
+</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_1" d="oIWsFtxQSQLnm7Wrdy-qHCXrUDq4">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_1" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=ZH1W4JnWXHITWpQnv4j10zNnUGKKCsRw-3n8Lk6-x1BTujsDlrlDFb8OJm8M4WaAUjOqtjuChkGpJ2Cl-SbJig=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtxQSQLnm7Wrdy-qHCXrUDq4" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_1" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=ZH1W4JnWXHITWpQnv4j10zNnUGKKCsRw-3n8Lk6-x1BTujsDlrlDFb8OJm8M4WaAUjOqtjuChkGpJ2Cl-SbJig==">捷利信<em><!--red_beg-->医药<!--red_end--></em></a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">gh_d43045e8cd69</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=6WX6H-yuId67YR6yDG9GnwVps2FoLKKqUlpUESNMz05pLnrgd858Srd3PXt7uQBf9pA6ndyKm1OmpHc1mE1O-SIX-nUkDZO6BbEKtQsXTPs=" data-id="oIWsFtxQSQLnm7Wrdy-qHCXrUDq4" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=6WX6H-yuId67YR6yDG9GnwVps2FoLKKqUlpUESNMz05pLnrgd858Srd3PXt7uQBf9pA6ndyKm1OmpHc1mE1O-SIX-nUkDZO6BbEKtQsXTPs=',4,'oIWsFtxQSQLnm7Wrdy-qHCXrUDq4')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtxQSQLnm7Wrdy-qHCXrUDq4" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>快捷 诚信 利他</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_2" d="oIWsFtwhuqPhOrtlbPtLXornHpSw">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_2" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=Gv6RIGoMUAksyZ262xXNIkqFdQXGOzc3T29M2nBZpO0TehknCHJNmM3bkZdc5nBMAajqizVWkqbY1XN4Uq0TUg=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwhuqPhOrtlbPtLXornHpSw" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_2" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=Gv6RIGoMUAksyZ262xXNIkqFdQXGOzc3T29M2nBZpO0TehknCHJNmM3bkZdc5nBMAajqizVWkqbY1XN4Uq0TUg=="><em><!--red_beg-->医药<!--red_end--></em>领域投资</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">gupiaojibenmian</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=lcyb5R6HCxO0eoXA6X62a8a3q81DzIekNKkGgUDhPPfRI53X2LoAWeddDvMvM25RRsM00Jh4YfWHzs0*1NiS9R1tlJanO35zrWzJFJcT9NU=" data-id="oIWsFtwhuqPhOrtlbPtLXornHpSw" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=lcyb5R6HCxO0eoXA6X62a8a3q81DzIekNKkGgUDhPPfRI53X2LoAWeddDvMvM25RRsM00Jh4YfWHzs0*1NiS9R1tlJanO35zrWzJFJcT9NU=',4,'oIWsFtwhuqPhOrtlbPtLXornHpSw')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwhuqPhOrtlbPtLXornHpSw" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd><em><!--red_beg-->医药<!--red_end--></em>领域股票研究</dd>
+</dl>
+<dl>
+<dt>最近文章：</dt>
+<dd>
+<a target="_blank" uigs="account_article_2" href="http://mp.weixin.qq.com/s?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=2ycZoZ7UI1CVEV7VLn6HssOnTN5eo*k2EgRrrX88gVwLBHUt9Lt3NDSIZbiMulobnjUFKkf8Bcx1clEKrTTPZ1*Qm7jnnsVWC7AE42IdC3HYzKVKE*AduCIx03mANCiT2Q0W8Q75fHSQ8tZZkA-POWpdGY*cIL9n0GUgQ8sKwac=">2016年上半年<em><!--red_beg-->医药<!--red_end--></em>行业最赚钱上市公司TOP100</a><span><script>document.write(timeConvert('1486990193'))</script></span>
+</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_3" d="oIWsFt282sKGzTjJudOg2-Ax08Tc">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_3" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=uUvIWWrJjcLo1fbhVOQMANh6Bl89qoOCJTKvqCPc5Z6lvi1TWW0YQYZzJjBo*lOGvbVIeDQzONjLjfoeWn-ipg=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt282sKGzTjJudOg2-Ax08Tc" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_3" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=uUvIWWrJjcLo1fbhVOQMANh6Bl89qoOCJTKvqCPc5Z6lvi1TWW0YQYZzJjBo*lOGvbVIeDQzONjLjfoeWn-ipg==">黑龙江金天爱心<em><!--red_beg-->医药<!--red_end--></em></a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">jtaxyy</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=EyLQaEku*WNuD9E0rGwBm6QH*MeU57RgMCup2M*zPtagMS8BaeBr1fVXyCK9hz2JwqqLTzCFF4LtgtgwsWSk3wj9khnHV8MwKqT340C3NLs=" data-id="oIWsFt282sKGzTjJudOg2-Ax08Tc" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=EyLQaEku*WNuD9E0rGwBm6QH*MeU57RgMCup2M*zPtagMS8BaeBr1fVXyCK9hz2JwqqLTzCFF4LtgtgwsWSk3wj9khnHV8MwKqT340C3NLs=',4,'oIWsFt282sKGzTjJudOg2-Ax08Tc')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt282sKGzTjJudOg2-Ax08Tc" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>金天爱心<em><!--red_beg-->医药<!--red_end--></em>信息发布</dd>
+</dl>
+<dl>
+<dt>最近文章：</dt>
+<dd>
+<a target="_blank" uigs="account_article_3" href="http://mp.weixin.qq.com/s?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=N41S6vzeD*8998UxwmVjkP4Ni9NbmeXNMQHpxeNa78iu1JlzmCTBb6cRgfvS4a00gLPKaUAcgJJpyx2tPZPX0zselqDDdme*jh8PbjKKkq3t6aELUGKnMJYoKOAQuBpZZT8V*xxoS9BIc*Gqz9JVvw*3Jhe18-H4Ls6Vy4uRzAM=">【金天爱心大药房】金天集团19周年庆典暨爱心中国公益盛典大型活动...</a><span><script>document.write(timeConvert('1498294111'))</script></span>
+</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_4" d="oIWsFtwRBsqdfZWhlcgAiTYeCerk">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_4" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=V73GIls0laTK*M3rNva4fI3q28s1FZVnh464wockuMq8JppvX-RNUG*R5WdiGAvbCROrRfkkkvaDfWO8kp-HdA=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwRBsqdfZWhlcgAiTYeCerk" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_4" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=V73GIls0laTK*M3rNva4fI3q28s1FZVnh464wockuMq8JppvX-RNUG*R5WdiGAvbCROrRfkkkvaDfWO8kp-HdA==">华宁县<em><!--red_beg-->医药<!--red_end--></em>有限责任公司</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">hyy86339</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=fLam*HRJ5pzc2A5b71fdUo*cRZ4Dp2L4Qp6rdUjFEe7hnmzcYHJcH3ce0ka5HX53FN6IwhBgP3tQCv4*pVlBhjDJyvo6OebzZEowIAciRzk=" data-id="oIWsFtwRBsqdfZWhlcgAiTYeCerk" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=fLam*HRJ5pzc2A5b71fdUo*cRZ4Dp2L4Qp6rdUjFEe7hnmzcYHJcH3ce0ka5HX53FN6IwhBgP3tQCv4*pVlBhjDJyvo6OebzZEowIAciRzk=',4,'oIWsFtwRBsqdfZWhlcgAiTYeCerk')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwRBsqdfZWhlcgAiTYeCerk" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>取百药之长,造百姓健康.</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_5" d="oIWsFt1PV_VG_yKahkPtKklQ2iHU">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_5" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=6wmQn5bFqOC9V6lnA4ryWA*mZomvy6h-4TUD6maRsNiCyoEhaqg3Mw3hlt1FkjuKPz00e8Rrqj4UNZTscUOAWA=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt1PV_VG_yKahkPtKklQ2iHU" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_5" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=6wmQn5bFqOC9V6lnA4ryWA*mZomvy6h-4TUD6maRsNiCyoEhaqg3Mw3hlt1FkjuKPz00e8Rrqj4UNZTscUOAWA=="><em><!--red_beg-->医药<!--red_end--></em>人脉圈APP</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">W18031272323</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=x7fUTjGBDC6Ciw25ZiDdphgDYZZPoY2rGtD74rZ1xPg42jaiHIn6hsYYoB3ymasqfVBv-81GK-lN3keM885V-75AxWj9PY-N71uegtbcbnw=" data-id="oIWsFt1PV_VG_yKahkPtKklQ2iHU" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=x7fUTjGBDC6Ciw25ZiDdphgDYZZPoY2rGtD74rZ1xPg42jaiHIn6hsYYoB3ymasqfVBv-81GK-lN3keM885V-75AxWj9PY-N71uegtbcbnw=',4,'oIWsFt1PV_VG_yKahkPtKklQ2iHU')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt1PV_VG_yKahkPtKklQ2iHU" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>中国最大的<em><!--red_beg-->医药<!--red_end--></em>营销群体,关注后加入全国各地区<em><!--red_beg-->医药<!--red_end--></em>精英群</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_6" d="oIWsFt-UDxCnTDBqPq2yZKi_pQOY">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_6" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=X6mJ5OeRrtWoBdGLI8x*RInEb5seIWFRd-eVNR9zXeTgc46nH-1bfu30cKbz6eYcO99kyWCUphreERYIR-B3NQ=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt-UDxCnTDBqPq2yZKi_pQOY" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_6" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=X6mJ5OeRrtWoBdGLI8x*RInEb5seIWFRd-eVNR9zXeTgc46nH-1bfu30cKbz6eYcO99kyWCUphreERYIR-B3NQ==">镇沅<em><!--red_beg-->医药<!--red_end--></em>美妆店</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">xyyymzd</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=hXFmE7fk-Sw4X2SbSnID1jI*ATkF4ZqKx1iS0azvwLP31a4rySyPEuXfHJtH-k-SAPIvI8EV9MR5q9nyaNNHQoRIhuNkTt8ZyyzcC5g7t9w=" data-id="oIWsFt-UDxCnTDBqPq2yZKi_pQOY" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=hXFmE7fk-Sw4X2SbSnID1jI*ATkF4ZqKx1iS0azvwLP31a4rySyPEuXfHJtH-k-SAPIvI8EV9MR5q9nyaNNHQoRIhuNkTt8ZyyzcC5g7t9w=',4,'oIWsFt-UDxCnTDBqPq2yZKi_pQOY')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt-UDxCnTDBqPq2yZKi_pQOY" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>镇沅县<em><!--red_beg-->医药<!--red_end--></em>公司美妆店 地址:镇沅县恩水路(<em><!--red_beg-->医药<!--red_end--></em>公司三店旁,天生祥正对面) 电话:5816738 服务投诉电话:5811415</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_7" d="oIWsFtwn2PLThH8u54qd9RvVkocQ">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_7" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=dkPcIRjWfG66RVVHlGFEZv3SnHDGDnmr*ntCL1LuAufNgyM-jfoLTp9A5ga8qLTdeNrKlb*pc*lYvLWwhNUXRw=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwn2PLThH8u54qd9RvVkocQ" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_7" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=dkPcIRjWfG66RVVHlGFEZv3SnHDGDnmr*ntCL1LuAufNgyM-jfoLTp9A5ga8qLTdeNrKlb*pc*lYvLWwhNUXRw==">新密市<em><!--red_beg-->医药<!--red_end--></em>公司信息平台</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">xmsyygs</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=bcQ2hbXurHV79*Km*Bbq3ohBzjKrV43-U6KmqUg15IygrBthtViWcDoW-RaN*nN1u7tROnZvYDRoGTpgOX57MfLMHHs9LS-lvPT8K2Wf2QA=" data-id="oIWsFtwn2PLThH8u54qd9RvVkocQ" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=bcQ2hbXurHV79*Km*Bbq3ohBzjKrV43-U6KmqUg15IygrBthtViWcDoW-RaN*nN1u7tROnZvYDRoGTpgOX57MfLMHHs9LS-lvPT8K2Wf2QA=',4,'oIWsFtwn2PLThH8u54qd9RvVkocQ')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFtwn2PLThH8u54qd9RvVkocQ" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>新密市<em><!--red_beg-->医药<!--red_end--></em>公司对外窗口,定时发送公司相关活动业务及季节性产品信息.</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_8" d="oIWsFt5UrijSVZpsqe-DoIzpLpNs">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_8" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=Me2LG8ZwpEnTCe*LLlet-XT*OrhsznMOD-fTWDOEjHufaMuSP4FJadIk89uMqXmkyfHeqS-FfhQ0jvrwZ*ih0g=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt5UrijSVZpsqe-DoIzpLpNs" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_8" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=Me2LG8ZwpEnTCe*LLlet-XT*OrhsznMOD-fTWDOEjHufaMuSP4FJadIk89uMqXmkyfHeqS-FfhQ0jvrwZ*ih0g==">利科<em><!--red_beg-->医药<!--red_end--></em></a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">mpypyf</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=JWY4D2NbARO70Jtn1GkSdCskFKfsrmbO1yiGyhRKfIEfwXO8ZHaPfhE1Z-eO8b-jCAZY7GaUKyxIE6PkH6TKEwfxtd9Ut456Hjz1dEKH2uY=" data-id="oIWsFt5UrijSVZpsqe-DoIzpLpNs" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=JWY4D2NbARO70Jtn1GkSdCskFKfsrmbO1yiGyhRKfIEfwXO8ZHaPfhE1Z-eO8b-jCAZY7GaUKyxIE6PkH6TKEwfxtd9Ut456Hjz1dEKH2uY=',4,'oIWsFt5UrijSVZpsqe-DoIzpLpNs')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt5UrijSVZpsqe-DoIzpLpNs" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>专业的毛皮动物药品研发团队,一流的疾病防治、治疗技术,国内外最先进的养殖技术介绍,为您的养殖保驾护航.晨宇阳药品研发部</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+		<!-- a -->
+		<li id="sogou_vr_11002301_box_9" d="oIWsFt1ZRIXDxt7hU8VkUzcVc5-U">
+<div class="gzh-box2">
+<div class="img-box">
+<a target="_blank" uigs="account_image_9" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=sKLxuo1-BcYfFgpb*JBjwnRYuS9kmzaNpEEOSV*uSAuSaTIJqxtiyPvA353NgdeT0qhfNXmLeSZ7XjAuCmGBHw=="><span></span><img src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt1ZRIXDxt7hU8VkUzcVc5-U" onload="resizeImage(this,58,58)" onerror="errorHeadImage(this)"></a>
+</div>
+<div class="txt-box">
+<p class="tit">
+<a target="_blank" uigs="account_name_9" href="http://mp.weixin.qq.com/profile?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=sKLxuo1-BcYfFgpb*JBjwnRYuS9kmzaNpEEOSV*uSAuSaTIJqxtiyPvA353NgdeT0qhfNXmLeSZ7XjAuCmGBHw==">海大<em><!--red_beg-->医药<!--red_end--></em>之家</a>
+</p>
+<p class="info">微信号：<label name="em_weixinhao">gh_d223e3de6b43</label>
+</p>
+</div>
+<div class="ew-pop">
+<a class="code" href="javascript:void(0)"><img height="24" width="24" src="/new/pc/images/ico_ewm.png"></a><span style="display:none;" class="pop"><i></i>微信扫一扫关注<br>
+<img height="104" width="104" src="http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=xjPwR3RXdkkZnnveJvv4qpGCP4UtlXTXtSp2r4rMYUUCNZUhy3dM17vI7ZpCwqHQEMUtf-p6dPDUd3IKA-AWhoBPnq0lV9-bEi6w-N9TF88=" data-id="oIWsFt1ZRIXDxt7hU8VkUzcVc5-U" onerror="qrcodeShowError('http://mp.weixin.qq.com/rr?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=xjPwR3RXdkkZnnveJvv4qpGCP4UtlXTXtSp2r4rMYUUCNZUhy3dM17vI7ZpCwqHQEMUtf-p6dPDUd3IKA-AWhoBPnq0lV9-bEi6w-N9TF88=',4,'oIWsFt1ZRIXDxt7hU8VkUzcVc5-U')"><img height="32" width="32" class="shot-img" src="http://img01.sogoucdn.com/app/a/100520090/oIWsFt1ZRIXDxt7hU8VkUzcVc5-U" onerror="errorHeadImage(this)"></span>
+</div>
+</div>
+<dl>
+<dt>功能介绍：</dt>
+<dd>传递信息,活动宣传;通知发布,互动交流.</dd>
+</dl>
+<dl>
+<dt>最近文章：</dt>
+<dd>
+<a target="_blank" uigs="account_article_9" href="http://mp.weixin.qq.com/s?src=3&amp;timestamp=1514014489&amp;ver=1&amp;signature=*scGu*lIeOsO472gm*D2v1J-BZGzNlev8ZDL4pt3nHbZQQOpeg2uVokAK-736O-YiNFBFZ9O7MZP-LUnUymEFBw32emo0bwTFUph0Cyq91AMFFDt3ALedc46gX-*mwqqxxyq2kSauX8VPGayLkXPFKPIQ2wr4jxvSQYijF99Tdg=">315消费者权益日,你知多少</a><span><script>document.write(timeConvert('1489564742'))</script></span>
+</dd>
+</dl>
+</li>
+
+		<!-- z -->
+	
+</ul>
+    
+        <p class="look-more" style="display: none;">当前只显示前100条内容，<a href="javascript:void(0)" name="top_login" uigs="home_login_100_gzh_search">登录</a>&nbsp;可查看更多。</p>
+    
+<div class="p-fy" id="pagebar_container">
+	
+			<a id="sogou_prev" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=9&ie=utf8" class="pev" uigs="page_before">上一页</a>
+			
+				<a id="sogou_page_1" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=1&ie=utf8" uigs="page_1">1</a>
+				
+					<b style="float:left;font-weight:normal;margin-right:10px">...</b>
+				<a id="sogou_page_6" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=6&ie=utf8" uigs="page_6">6</a><a id="sogou_page_7" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=7&ie=utf8" uigs="page_7">7</a><a id="sogou_page_8" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=8&ie=utf8" uigs="page_8">8</a><a id="sogou_page_9" href="?query=%E5%8C%BB%E8%8D%AF&_sug_type_=&s_from=input&_sug_=n&type=1&page=9&ie=utf8" uigs="page_9">9</a><span>10</span>
+		<div class="mun">找到约171条结果<!--resultbarnum:171--></div>
+</div>
+    
+</div>
+
+
+        </div>
+        
+            <script>var account_anti_url = "/websearch/weixin/pc/anti_account.jsp?t=1514014489396&signature=cFM8x79Vh8BrcEln3139uL8FNbPGvlxuZ*hWU16TSak7E6SEbiIuG2qKeXvsNcovSsQPtilFjSSjqMpyjZKj4v0QmW-AopFLcAU*IjLoFCkujdvRxbnU*AnXaAdiLu-mAIcjmneaY*JvMNyO6i-l56vigUn0mKlsjgwNHOQ3m7CmTX4nYwuQBvO5R4JS7IKkCLZifwdO37v1zR-WClvExwC6XCO29whVZl3eHH9EO8slgEIIy74nlwW-BdCCckS25WG9FOGayG9njZX6zpEL3DEGFGcCHm42XeTYKTZ0P5fnShACag1PDXXzHlpiUT9i-7o603nYE80O12zMEA5hl4SHgep7nkFCCvuzo4QV3mHn3PhQPx3Sgd7eRMo5oaqnh74iCc4ym0G00zuPPwoeaMg198uzgSEZz*si8-FpevQ=";</script>
+        
+    </div>
+    <div class="back-top" style="display: none;"><a href="javascript:void(0);" uigs="other_float_back_top"></a></div>
+    
+    <div class="bottom-form">
+        
+
+<form name="searchForm" action="/weixin">
+    <div class="querybox">
+        <div class="qborder">
+            <div class="qborder2">
+                <input type="hidden" name="type" value="1"/>
+                <input type="hidden" name="s_from" value="input"/>
+                <input type="text" class="query" name="query" id="query" ov="医药" value="医药" autocomplete="off"/>
+                
+                    <input type="hidden" name="ie" value="utf8"/>
+                
+                <a href="javascript:void(0)" class="qreset2" name="reset" uigs="search_reset"></a>
+            </div>
+        </div>
+        <input type="button" value="搜文章" class="swz" onclick="search(this,2)" uigs="search_article"/>
+        <input type="button" value="搜公众号" class="swz2" onclick="search(this,1)" uigs="search_account"/>
+        <input type="hidden" name="_sug_" value="n"/>
+        <input type="hidden" name="_sug_type_" value=""/>
+    </div>
+</form>
+    </div>
+
+<div class="footer-box" id="s_footer">
+    <div class="footer">
+        <a id="sogou_webhelp" href="http://help.sogou.com/" target="_blank" uigs="bottom_ssbz">搜索帮助</a>&nbsp;<a href="http://fankui.help.sogou.com/index.php/web/web/index/type/4" target="_blank" uigs="bottom_yjfk">意见反馈及投诉</a>&nbsp;<script src="/websearch/wexinurlenc_sogou_profile.jsp"></script>&copy;&nbsp;2017&nbsp;SOGOU.COM&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sogou.com/docs/terms.htm" target="_blank" uigs="bottom_mzsm">免责声明</a>&nbsp;<a href="http://corp.sogou.com/private.html" target="_blank" uigs="bottom_yszc">隐私政策</a>
+    </div>
+</div>
+    
+        <script src="/new/pc/js/account.min.js?v=20170315"></script>
+    
+    <script>
+        var WX_SUGG_PAGE_FROM="pcGzhSearch";
+        
+        var SugPara = {
+            "bigsize":true,
+            "enableSug":true,
+            "sugType":"wxpub",
+            "domain":"w.sugg.sogou.com",
+            "productId":"web",
+            "sugFormName":"sf",
+            "submitId":"stb",
+            "suggestRid":"01015002",
+            "normalRid":"01019900",
+            "oms":1,
+            "nofixwidth":1,
+            "useParent":1
+        };
+        uigs_para.exp_id = "null_90-null_91-null_92-null_93-null_94-null_95-null_96-null_97-null_98-null_99-";
+        uigs_para.exp_id = uigs_para.exp_id.substring(0, uigs_para.exp_id.length - 1);
+    </script>
+    <script src="/new/weixin/js/uigs.min.js?v=20170331"></script>
+    <script src="/new/pc/js/log.min.js?v=20170321"></script>
+    <script src="/new/pc/js/event.min.js?v=20170828"></script>
+    <script src="/new/pc/js/search.min.js?v=20161107"></script>
+    <script src="/new/pc/js/suggestion.min.js?v=20170414"></script>
+    <script src="/new/weixin/js/form.min.js?v=20170101"></script>
+</body>
+</html>
+<!--1514014489405-->
+<!--zly--><!--weixin-->

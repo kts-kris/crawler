@@ -1,0 +1,107 @@
+2017-12-23 14:26:57 pid:39791 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:27:40 pid:39800 Error: Class 'Connection' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php(20): Worker::getWriteDB()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/start.php(64): Worker::saveByDB('offical_account', Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-23 14:27:40 pid:39800 Worker process terminated
+2017-12-23 14:27:40 pid:39791 worker[JsonRpc:39800] exit with status 64000
+2017-12-23 14:28:16 pid:39803 Error: Class 'Components\Db\Connection' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php(20): Worker::getWriteDB()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/start.php(64): Worker::saveByDB('offical_account', Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-23 14:28:16 pid:39803 Worker process terminated
+2017-12-23 14:28:16 pid:39791 worker[JsonRpc:39803] exit with status 64000
+2017-12-23 14:28:25 pid:39806 Error: Class 'Components\Db\Connection' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php(20): Worker::getWriteDB()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/start.php(64): Worker::saveByDB('offical_account', Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-23 14:28:25 pid:39806 Worker process terminated
+2017-12-23 14:28:25 pid:39791 worker[JsonRpc:39806] exit with status 64000
+2017-12-23 14:29:00 pid:39807 Error: Class 'Components\Db\Connection' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php(20): Worker::getWriteDB()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/start.php(64): Worker::saveByDB('offical_account', Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-23 14:29:00 pid:39807 Worker process terminated
+2017-12-23 14:29:00 pid:39791 worker[JsonRpc:39807] exit with status 64000
+2017-12-23 14:34:37 pid:39799 Error: Class 'Components\Db\Connection' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/Services/Worker.php(20): Worker::getWriteDB()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/JsonRpc/start.php(64): Worker::saveByDB('offical_account', Array)
+#2 [internal function]: {closure}(Object(Workerman\Connection\TcpConnection), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Connection/TcpConnection.php(657): call_user_func(Object(Closure), Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #41, 2, Resource id #41)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-23 14:34:37 pid:39799 Worker process terminated
+2017-12-23 14:34:37 pid:39791 worker[JsonRpc:39799] exit with status 64000
+2017-12-23 14:35:25 pid:39791 Workerman[start.php] stopping ...
+2017-12-23 14:35:25 pid:39791 Workerman[start.php] has been stopped
+2017-12-23 14:35:27 pid:40319 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:35:40 pid:40319 Workerman[start.php] stopping ...
+2017-12-23 14:35:40 pid:40319 Workerman[start.php] has been stopped
+2017-12-23 14:36:39 pid:40374 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:38:52 pid:40374 Workerman[start.php] stopping ...
+2017-12-23 14:38:52 pid:40374 Workerman[start.php] has been stopped
+2017-12-23 14:38:54 pid:40463 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:39:28 pid:40463 Workerman[start.php] stopping ...
+2017-12-23 14:39:28 pid:40463 Workerman[start.php] has been stopped
+2017-12-23 14:39:29 pid:40517 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:41:32 pid:40517 Workerman[start.php] stopping ...
+2017-12-23 14:41:32 pid:40517 Workerman[start.php] has been stopped
+2017-12-23 14:41:34 pid:40627 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:41:44 pid:40627 Workerman[start.php] stopping ...
+2017-12-23 14:41:44 pid:40627 Workerman[start.php] has been stopped
+2017-12-23 14:43:56 pid:40694 Workerman[start.php] start in DEBUG mode
+2017-12-23 14:44:12 pid:40694 Workerman[start.php] stopping ...
+2017-12-23 14:44:12 pid:40694 Workerman[start.php] has been stopped
+2017-12-23 15:03:18 pid:40979 Workerman[start.php] start in DEBUG mode
