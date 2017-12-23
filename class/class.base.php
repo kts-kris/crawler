@@ -1,8 +1,10 @@
 <?php
-
-require_once("lib/simple_html_dom.php");
-require_once("lib/php-hooks.php");
-require_once("lib/Snoopy.class.php");
+define('LIB_DIR', dirname(__DIR__) . '/lib/');
+require_once(LIB_DIR . "simple_html_dom.php");
+require_once(LIB_DIR . "php-hooks.php");
+require_once(LIB_DIR . "Snoopy.class.php");
+require_once(LIB_DIR . "RpcClient.php");
+require_once(LIB_DIR . "color.php");
 
 abstract class CrawlerBase 
 {
@@ -10,10 +12,12 @@ abstract class CrawlerBase
 	protected $snoopy = null;
 	protected $crawl_messages = array();
 	protected $crawl_config = array();
+	protected $color = null;
 
 	public function __construct() {
 		self::$_hooks = new Hooks();
 		$this->snoopy = new Snoopy();
+		$this->color = new Colors();
  		mb_internal_encoding('UTF-8');
 
 	}
@@ -252,5 +256,30 @@ abstract class CrawlerBase
 		} 
 		curl_close($ch); 
 		return $result; 
-	} 
+	}
+
+    /**
+     * 保存抓取内容
+     * @param $table
+     * @param $data
+     * @param string $scheme
+     * @return bool
+     */
+	protected function save($table, $data, $scheme='db'){
+        RpcClient::config($this->crawl_config['workerConfig']);
+        $worker = RpcClient::instance('Worker');
+        switch ($scheme){
+            case 'db':
+                $sendRes = $worker->asend_saveByDB($table, $data);
+                if($sendRes !== true){
+                    return false;
+                }
+                $recv = $worker->arecv_saveByDB($table, $data);
+                break;
+
+            default:
+                $worker->asend_saveByDB($table, $data);
+        }
+        return true;
+    }
 }

@@ -1,6 +1,6 @@
 <?php
 
-require_once('class.base.php');
+require_once(dirname(__FILE__) . '/class.base.php');
 
 class CrawlerWeixinSogou extends CrawlerBase {
 
@@ -41,7 +41,8 @@ class CrawlerWeixinSogou extends CrawlerBase {
 
 				$weibo_result = $this->snoopy->results;
 
-				$this->log("请求返回结果:$weibo_result");
+//				$this->log("请求返回结果:$weibo_result");
+				$this->log("请求返回结果文本长度: " . strlen($weibo_result));
 
 				$content = str_get_html($weibo_result);
 				$nodes = $content->find('.news-list li');
@@ -134,6 +135,7 @@ class CrawlerWeixinSogou extends CrawlerBase {
 	*/
 
 	public function doMessage() {
-		$this->log('抓取结果:' . print_r($this->crawl_messages, true));
+//		$this->log('抓取结果:' . print_r($this->crawl_messages, true));
+		$this->log('抓取结果:' . count($this->crawl_messages, true));
 	}
 }

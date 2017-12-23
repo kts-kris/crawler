@@ -41,7 +41,7 @@ class CrawlerWeiboSearch extends CrawlerBase {
 
 				$crawl_result = $this->snoopy->results;
 
-				$this->log("请求返回结果:$crawl_result");
+				$this->log("请求返回结果:".strlen($crawl_result));
 
 				$message_result = json_decode($crawl_result, true);
 
@@ -122,6 +122,7 @@ class CrawlerWeiboSearch extends CrawlerBase {
 	}
 
 	public function doMessage() {
-		$this->log('抓取结果:' . print_r($this->crawl_messages, true));
+		$this->log('抓取结果:' . count($this->crawl_messages));
+//		$this->log('抓取结果:' . print_r($this->crawl_messages, true));
 	}
 }
