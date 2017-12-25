@@ -6,6 +6,10 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Components\\Crawler\\Colors' => $vendorDir . '/components/crawler/color.php',
+    'Components\\Crawler\\Snoopy' => $vendorDir . '/components/crawler/Snoopy.class.php',
+    'Components\\Crawler\\simple_html_dom' => $vendorDir . '/components/crawler/simple_html_dom.php',
+    'Components\\Crawler\\simple_html_dom_node' => $vendorDir . '/components/crawler/simple_html_dom.php',
     'Components\\Db\\Connection' => $vendorDir . '/components/db/Connection.php',
     'Components\\Db\\JMDbConnectionPageResult' => $vendorDir . '/components/db/Connection.php',
 );

@@ -21,6 +21,10 @@ class ComposerStaticInit5e82643e4a188fc18aacdbc471754e0e
     );
 
     public static $classMap = array (
+        'Components\\Crawler\\Colors' => __DIR__ . '/..' . '/components/crawler/color.php',
+        'Components\\Crawler\\Snoopy' => __DIR__ . '/..' . '/components/crawler/Snoopy.class.php',
+        'Components\\Crawler\\simple_html_dom' => __DIR__ . '/..' . '/components/crawler/simple_html_dom.php',
+        'Components\\Crawler\\simple_html_dom_node' => __DIR__ . '/..' . '/components/crawler/simple_html_dom.php',
         'Components\\Db\\Connection' => __DIR__ . '/..' . '/components/db/Connection.php',
         'Components\\Db\\JMDbConnectionPageResult' => __DIR__ . '/..' . '/components/db/Connection.php',
     );
