@@ -34,7 +34,7 @@ class DoCrawler{
         }
         //TODO 获取队列内容并解析
         self::$redis->connect('127.0.0.1', 6379);
-        self::$redis->subscribe($queueName, function($instance, $channelName, $message){
+        self::$redis->subscribe([$queueName], function($instance, $channelName, $message){
             print $channelName.'=====>'.$message."\n";
         });
     }
