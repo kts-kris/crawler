@@ -29,6 +29,9 @@ class DoCrawler{
      * @param int $priority
      */
     public static function fetchQueueTask($queueName='defalut', $priority=0){
+        if (!static::$instance) {
+            static::$instance = new static();
+        }
         //TODO 获取队列内容并解析
         self::$redis->connect('127.0.0.1', 6379);
         self::$redis->subscribe($queueName, function($instance, $channelName, $message){
