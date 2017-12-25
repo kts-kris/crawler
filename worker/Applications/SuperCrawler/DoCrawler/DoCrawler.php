@@ -33,10 +33,11 @@ class DoCrawler{
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        self::$redis->connect('127.0.0.1', 6379);
+        self::$redis->pconnect('127.0.0.1', 6379);
         self::$redis->subscribe([$queueName], function($instance, $channelName, $message){
             print $channelName.'=====>'.$message."\n";
         });
+        self::$redis->close();
     }
 
     public static function setReferer($url){
