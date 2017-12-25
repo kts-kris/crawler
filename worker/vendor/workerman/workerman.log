@@ -105,3 +105,436 @@ Stack trace:
 2017-12-23 14:44:12 pid:40694 Workerman[start.php] stopping ...
 2017-12-23 14:44:12 pid:40694 Workerman[start.php] has been stopped
 2017-12-23 15:03:18 pid:40979 Workerman[start.php] start in DEBUG mode
+2017-12-25 11:27:37 pid:40979 Workerman[start.php] stopping ...
+2017-12-25 11:27:37 pid:40979 Workerman[start.php] has been stopped
+2017-12-25 11:29:42 pid:44388 Workerman[start.php] start in DEBUG mode
+2017-12-25 11:29:42 pid:44409 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44410 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44411 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44412 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44413 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44414 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44415 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44416 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44417 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44418 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44419 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44420 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44421 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44422 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44423 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:42 pid:44424 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#7 {main}
+2017-12-25 11:29:43 pid:44409 Worker process terminated
+2017-12-25 11:29:43 pid:44410 Worker process terminated
+2017-12-25 11:29:43 pid:44411 Worker process terminated
+2017-12-25 11:29:43 pid:44412 Worker process terminated
+2017-12-25 11:29:43 pid:44413 Worker process terminated
+2017-12-25 11:29:43 pid:44414 Worker process terminated
+2017-12-25 11:29:43 pid:44415 Worker process terminated
+2017-12-25 11:29:43 pid:44416 Worker process terminated
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44409] exit with status 64000
+2017-12-25 11:29:43 pid:44417 Worker process terminated
+2017-12-25 11:29:43 pid:44418 Worker process terminated
+2017-12-25 11:29:43 pid:44419 Worker process terminated
+2017-12-25 11:29:43 pid:44420 Worker process terminated
+2017-12-25 11:29:43 pid:44422 Worker process terminated
+2017-12-25 11:29:43 pid:44421 Worker process terminated
+2017-12-25 11:29:43 pid:44424 Worker process terminated
+2017-12-25 11:29:43 pid:44423 Worker process terminated
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44412] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44413] exit with status 64000
+2017-12-25 11:29:43 pid:44425 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44427 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44411] exit with status 64000
+2017-12-25 11:29:43 pid:44426 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44424] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44423] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44422] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44421] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44420] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44419] exit with status 64000
+2017-12-25 11:29:43 pid:44428 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44433 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44430 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44432 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44418] exit with status 64000
+2017-12-25 11:29:43 pid:44429 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44431 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44434 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44417] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44416] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44415] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44414] exit with status 64000
+2017-12-25 11:29:43 pid:44388 worker[SuperCrawler:44410] exit with status 64000
+2017-12-25 11:29:43 pid:44435 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44436 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44437 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44438 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44439 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:43 pid:44440 Error: Class 'Timer' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php:24
+Stack trace:
+#0 [internal function]: {closure}(Object(Workerman\Worker))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2081): call_user_func(Object(Closure), Object(Workerman\Worker))
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#9 {main}
+2017-12-25 11:29:44 pid:44388 Workerman[start.php] stopping ...
+2017-12-25 11:29:44 pid:44427 Worker process terminated
+2017-12-25 11:29:44 pid:44425 Worker process terminated
+2017-12-25 11:29:44 pid:44426 Worker process terminated
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44426] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44427] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44425] exit with status 64000
+2017-12-25 11:29:44 pid:44429 Worker process terminated
+2017-12-25 11:29:44 pid:44430 Worker process terminated
+2017-12-25 11:29:44 pid:44428 Worker process terminated
+2017-12-25 11:29:44 pid:44433 Worker process terminated
+2017-12-25 11:29:44 pid:44431 Worker process terminated
+2017-12-25 11:29:44 pid:44432 Worker process terminated
+2017-12-25 11:29:44 pid:44434 Worker process terminated
+2017-12-25 11:29:44 pid:44435 Worker process terminated
+2017-12-25 11:29:44 pid:44436 Worker process terminated
+2017-12-25 11:29:44 pid:44437 Worker process terminated
+2017-12-25 11:29:44 pid:44440 Worker process terminated
+2017-12-25 11:29:44 pid:44438 Worker process terminated
+2017-12-25 11:29:44 pid:44439 Worker process terminated
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44440] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44439] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44438] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44437] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44436] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44435] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44434] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44433] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44432] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44431] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44430] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44429] exit with status 64000
+2017-12-25 11:29:44 pid:44388 worker[SuperCrawler:44428] exit with status 64000
+2017-12-25 11:29:44 pid:44388 Workerman[start.php] has been stopped
+2017-12-25 11:30:46 pid:44472 Workerman[start.php] start in DEBUG mode
+2017-12-25 11:30:51 pid:44472 Workerman[start.php] stopping ...
+2017-12-25 11:30:51 pid:44472 Workerman[start.php] has been stopped
+2017-12-25 11:31:15 pid:44525 Workerman[start.php] start in DEBUG mode
+2017-12-25 11:31:24 pid:44525 Workerman[start.php] stopping ...
+2017-12-25 11:31:24 pid:44525 Workerman[start.php] has been stopped
+2017-12-25 11:31:43 pid:44583 Workerman[start.php] start in DEBUG mode
+2017-12-25 11:31:51 pid:44583 Workerman[start.php] stopping ...
+2017-12-25 11:31:52 pid:44583 Workerman[start.php] has been stopped
+2017-12-25 11:36:12 pid:44645 Workerman[start.php] start in DEBUG mode
+2017-12-25 15:40:21 pid:44645 Workerman[start.php] stopping ...
+2017-12-25 15:40:21 pid:44645 Workerman[start.php] has been stopped
