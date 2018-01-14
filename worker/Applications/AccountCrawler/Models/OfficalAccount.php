@@ -75,6 +75,7 @@ class OfficalAccount extends ModelBase {
             $res = $this->getOfficalAccount(['wx_id'=>$data['wx_id']]);
 //            var_dump($res);
             if(!isset($res[0]['sogou_id'])){
+                $data['create_time'] = date('Y-m-d H:i:s', time());
                 return $this->getWriteDb()->insert($this->getTableName(), $data);
             }
         }

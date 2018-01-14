@@ -40,7 +40,7 @@ class AccountCrawler{
         }
         sleep(rand(1,10));
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <' => date('Y-m-d H:i:s', time()-300)], 1);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <' => date('Y-m-d H:i:s', time()-3600)], 1);
         $biz = (array) new \Config\Biz;
 //        var_dump($biz);
         //return false;
@@ -161,8 +161,7 @@ class AccountCrawler{
                     $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
 //                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
                 }
-                print $accountInfoArray[$wxId]['wx_qrcode'] . "\n\n";
-
+//                print $accountInfoArray[$wxId]['wx_qrcode'] . "\n\n";
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
             }
