@@ -60,7 +60,10 @@ class AccountCrawler{
 
             \Models\AccountInfo::model()->updateWorderId($accountArray['id'], $worker_id);
             $content = self::gatherUrl($url);
-            if($content === false)return false;
+            if($content === false){
+                \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
+                return false;
+            }
 
             preg_match('/account_anti_url = "([\w\W]*?)"/', $content, $antiArray);
             //var_dump($antiArray);exit;
@@ -82,7 +85,8 @@ class AccountCrawler{
             //抓取被封检测
             $authBox = $html->find('[name=authform]', 0);
             if($authBox){
-                print '疑似访问被封';
+                print '疑似访问被封' . "\n";
+                \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                 return false;
             }
 
@@ -119,7 +123,7 @@ class AccountCrawler{
                     $accountInfoArray[$wxId]['wx_name'] = strip_tags($wxTitle);
 
                 }else{
-                    //\Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
+                    \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                     return false;
                 }
 
@@ -152,8 +156,8 @@ class AccountCrawler{
                     $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
 //                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
                 }
-
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
+                \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
             }
         }
 
