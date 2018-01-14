@@ -91,7 +91,8 @@ class ArticleCrawler{
 //
 //            $nodes = $html->find('.news-list2 li');
 
-            foreach($msgListArray as $node){
+            foreach($msgListArray['list'] as $node){
+//                var_dump($node, $msgListArray);
                 $msgInfoArray = [
                     'wx_id'                     =>  $accountArray['wx_id'],
                     'article_id'                =>  $node['comm_msg_info']['id'],
