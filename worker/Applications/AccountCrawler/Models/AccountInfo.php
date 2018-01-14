@@ -55,7 +55,8 @@ class AccountInfo extends ModelBase{
         return $this->getReadDb()
             ->select('*')
             ->from($this->getTableName())
-            ->where($condition);
+            ->where($condition)
+            ->query();
     }
 
     /**
