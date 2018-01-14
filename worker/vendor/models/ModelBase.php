@@ -558,7 +558,7 @@ abstract class ModelBase
      */
     protected function db()
     {
-        return 'wepiao';
+        return 'weixin';
     }
     
     /**
