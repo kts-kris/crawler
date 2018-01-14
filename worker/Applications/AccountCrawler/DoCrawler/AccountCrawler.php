@@ -45,7 +45,7 @@ class AccountCrawler{
 //        var_dump($biz);
         //return false;
         //$accountListArray = [['title_cn'  =>  '药智网', 'id'=>1, 'wx_id' => 'yaozh008']];
-        $accountInfoArray = [];
+//        $accountInfoArray = [];
         foreach($accountListArray as $key => $accountArray){
             $url = sprintf($biz['sogouWxUrls']['searchOaByTitle'], urlencode($accountArray['title_cn']));
             print $url . "\n";
@@ -102,12 +102,13 @@ class AccountCrawler{
                 $descBox = $node->find('dl', 0);
                 $businessBox = $node->find('dl', 1);
                 $lastMessageBox = $node->find('dl', 2);
-
+                $accountInfoArray = [];
                 $sogouId = $node->getAttribute('d');
 
                 if($txtBox){
                     $wxIdBox = $txtBox->find('[name=em_weixinhao]', 0);
                     $wxId = $wxIdBox->innertext();
+                    print 'html:'.$wxId.', db:'.$accountArray['wx_id']."\n";
                     if($wxId != $accountArray['wx_id'])continue;
                     $accountInfoArray[$wxId]['wx_id'] = $wxId;
                     $accountInfoArray[$wxId]['sogou_id'] = $sogouId;
