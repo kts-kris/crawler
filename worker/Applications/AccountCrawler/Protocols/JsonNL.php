@@ -11,7 +11,7 @@
  * @link http://www.workerman.net/
  * @license http://www.opensource.org/licenses/mit-license.php MIT License
  */
-namespace AccountCrawler\Protocols;
+namespace Protocols;
 /**
  * RPC 协议解析 相关
  * 协议格式为 [json字符串\n]

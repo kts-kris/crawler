@@ -865,3 +865,51 @@ Stack trace:
 2017-12-25 17:19:56 pid:47335 Workerman[start.php] start in DEBUG mode
 2017-12-25 17:20:05 pid:47335 Workerman[start.php] stopping ...
 2017-12-25 17:20:05 pid:47335 Workerman[start.php] has been stopped
+2018-01-14 16:07:01 pid:91963 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:07:56 pid:91996 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:07:57 pid:91998 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Class 'Redis' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:16
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(40): DoCrawler->__construct()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /Users/liuweigang/PhpstormProjec in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 16"
+2018-01-14 16:07:57 pid:92020 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Class 'Redis' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:16
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(40): DoCrawler->__construct()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /Users/liuweigang/PhpstormProjects in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 16"
+2018-01-14 16:07:57 pid:91996 worker[AccountCrawler:91998] exit with status 65280
+2018-01-14 16:07:57 pid:91996 worker[SuperCrawler:92020] exit with status 65280
+2018-01-14 16:07:58 pid:92026 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Class 'Redis' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:16
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(40): DoCrawler->__construct()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /Users/liuweigang/PhpstormProjec in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 16"
+2018-01-14 16:07:58 pid:92027 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Class 'Redis' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:16
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(40): DoCrawler->__construct()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /Users/liuweigang/PhpstormProjects in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 16"
+2018-01-14 16:07:58 pid:91996 worker[AccountCrawler:92026] exit with status 65280
+2018-01-14 16:07:59 pid:91996 worker[SuperCrawler:92027] exit with status 65280
+2018-01-14 16:07:59 pid:91996 Workerman[start.php] stopping ...
+2018-01-14 16:08:00 pid:91996 Workerman[start.php] has been stopped
