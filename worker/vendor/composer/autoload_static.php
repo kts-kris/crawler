@@ -27,6 +27,11 @@ class ComposerStaticInit5e82643e4a188fc18aacdbc471754e0e
         'Components\\Crawler\\simple_html_dom_node' => __DIR__ . '/..' . '/components/crawler/simple_html_dom.php',
         'Components\\Db\\Connection' => __DIR__ . '/..' . '/components/db/Connection.php',
         'Components\\Db\\JMDbConnectionPageResult' => __DIR__ . '/..' . '/components/db/Connection.php',
+        'Config\\Biz' => __DIR__ . '/..' . '/config/Biz.php',
+        'Config\\Db' => __DIR__ . '/..' . '/config/Db.php',
+        'Config\\Redis' => __DIR__ . '/..' . '/config/Redis.php',
+        'Models\\ModelBase' => __DIR__ . '/..' . '/models/ModelBase.php',
+        'config\\PHPClient' => __DIR__ . '/..' . '/config/PHPClient.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

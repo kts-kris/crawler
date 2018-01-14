@@ -538,3 +538,330 @@ Stack trace:
 2017-12-25 11:36:12 pid:44645 Workerman[start.php] start in DEBUG mode
 2017-12-25 15:40:21 pid:44645 Workerman[start.php] stopping ...
 2017-12-25 15:40:21 pid:44645 Workerman[start.php] has been stopped
+2017-12-25 16:40:04 pid:45973 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:40:05 pid:45994 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:39
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(39): Redis->subscribe(Array, Object(Closure))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 16:40:05 pid:45994 Worker process terminated
+2017-12-25 16:40:05 pid:45973 worker[SuperCrawler:45994] exit with status 64000
+2017-12-25 16:40:06 pid:45973 Workerman[start.php] stopping ...
+2017-12-25 16:40:06 pid:45973 Workerman[start.php] has been stopped
+2017-12-25 16:41:06 pid:46019 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:42:06 pid:46019 Workerman[start.php] stopping ...
+2017-12-25 16:42:07 pid:46040 RedisException: read error on connection in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:39
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(39): Redis->subscribe(Array, Object(Closure))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 16:42:07 pid:46040 Worker process terminated
+2017-12-25 16:42:07 pid:46019 worker[SuperCrawler:46040] exit with status 64000
+2017-12-25 16:42:07 pid:46019 Workerman[start.php] has been stopped
+2017-12-25 16:44:45 pid:46192 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:45:07 pid:46192 Workerman[start.php] stopping ...
+2017-12-25 16:45:09 pid:46192 worker[SuperCrawler:46213] exit with status 9
+2017-12-25 16:45:09 pid:46192 Workerman[start.php] has been stopped
+2017-12-25 16:48:53 pid:46354 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:48:56 pid:46354 Workerman[start.php] stopping ...
+2017-12-25 16:48:58 pid:46354 worker[SuperCrawler:46375] exit with status 9
+2017-12-25 16:48:58 pid:46354 Workerman[start.php] has been stopped
+2017-12-25 16:49:01 pid:46390 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:49:19 pid:46390 Workerman[start.php] stopping ...
+2017-12-25 16:49:21 pid:46390 worker[SuperCrawler:46411] exit with status 9
+2017-12-25 16:49:21 pid:46390 Workerman[start.php] has been stopped
+2017-12-25 16:49:31 pid:46491 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:49:32 pid:46491 Workerman[start.php] stopping ...
+2017-12-25 16:49:34 pid:46491 worker[SuperCrawler:46512] exit with status 9
+2017-12-25 16:49:34 pid:46491 Workerman[start.php] has been stopped
+2017-12-25 16:52:21 pid:46549 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:52:58 pid:46582 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:52:58 pid:46582 Workerman[start.php] already running
+2017-12-25 16:53:10 pid:46549 Workerman[start.php] stopping ...
+2017-12-25 16:53:10 pid:46549 Workerman[start.php] has been stopped
+2017-12-25 16:53:56 pid:46628 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:54:06 pid:46628 Workerman[start.php] stopping ...
+2017-12-25 16:54:06 pid:46628 Workerman[start.php] has been stopped
+2017-12-25 16:56:49 pid:46726 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:57:00 pid:46747 RedisException: Connection lost in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 16:57:00 pid:46747 Worker process terminated
+2017-12-25 16:57:00 pid:46726 worker[SuperCrawler:46747] exit with status 64000
+2017-12-25 16:57:01 pid:46767 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:01 pid:46767 Worker process terminated
+2017-12-25 16:57:01 pid:46726 worker[SuperCrawler:46767] exit with status 64000
+2017-12-25 16:57:02 pid:46768 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:02 pid:46768 Worker process terminated
+2017-12-25 16:57:02 pid:46726 worker[SuperCrawler:46768] exit with status 64000
+2017-12-25 16:57:03 pid:46769 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:03 pid:46769 Worker process terminated
+2017-12-25 16:57:03 pid:46726 worker[SuperCrawler:46769] exit with status 64000
+2017-12-25 16:57:04 pid:46770 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:04 pid:46770 Worker process terminated
+2017-12-25 16:57:04 pid:46726 worker[SuperCrawler:46770] exit with status 64000
+2017-12-25 16:57:05 pid:46771 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:05 pid:46771 Worker process terminated
+2017-12-25 16:57:05 pid:46726 worker[SuperCrawler:46771] exit with status 64000
+2017-12-25 16:57:06 pid:46772 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:06 pid:46772 Worker process terminated
+2017-12-25 16:57:06 pid:46726 worker[SuperCrawler:46772] exit with status 64000
+2017-12-25 16:57:07 pid:46783 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:07 pid:46783 Worker process terminated
+2017-12-25 16:57:07 pid:46726 worker[SuperCrawler:46783] exit with status 64000
+2017-12-25 16:57:08 pid:46784 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:08 pid:46784 Worker process terminated
+2017-12-25 16:57:08 pid:46726 worker[SuperCrawler:46784] exit with status 64000
+2017-12-25 16:57:09 pid:46785 RedisException: Redis server went away in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:43
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(43): Redis->rPop('default')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1426): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1375): Workerman\Worker::monitorWorkersForLinux()
+#12 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(461): Workerman\Worker::monitorWorkers()
+#13 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#14 {main}
+2017-12-25 16:57:09 pid:46785 Worker process terminated
+2017-12-25 16:57:09 pid:46726 worker[SuperCrawler:46785] exit with status 64000
+2017-12-25 16:57:10 pid:46726 Workerman[start.php] stopping ...
+2017-12-25 16:57:10 pid:46726 Workerman[start.php] has been stopped
+2017-12-25 16:57:19 pid:46808 Workerman[start.php] start in DEBUG mode
+2017-12-25 16:57:25 pid:46808 Workerman[start.php] stopping ...
+2017-12-25 16:57:26 pid:46808 Workerman[start.php] has been stopped
+2017-12-25 16:57:34 pid:46852 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:04:52 pid:46852 Workerman[start.php] stopping ...
+2017-12-25 17:04:52 pid:46852 Workerman[start.php] has been stopped
+2017-12-25 17:06:27 pid:46946 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:06:47 pid:46946 Workerman[start.php] stopping ...
+2017-12-25 17:06:48 pid:46946 Workerman[start.php] has been stopped
+2017-12-25 17:17:10 pid:47145 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:17:18 pid:47166 Error: Class 'slef' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:77
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(54): DoCrawler::setAgent('123123')
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 17:17:18 pid:47166 Worker process terminated
+2017-12-25 17:17:18 pid:47145 worker[SuperCrawler:47166] exit with status 64000
+2017-12-25 17:17:19 pid:47145 Workerman[start.php] stopping ...
+2017-12-25 17:17:19 pid:47145 Workerman[start.php] has been stopped
+2017-12-25 17:17:39 pid:47203 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:17:42 pid:47224 ArgumentCountError: Too few arguments to function DoCrawler::parseNodes(), 1 passed in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 66 and at least 2 expected in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:137
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(66): DoCrawler::parseNodes(Object(Components\Crawler\simple_html_dom))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 17:17:42 pid:47224 Worker process terminated
+2017-12-25 17:17:42 pid:47203 worker[SuperCrawler:47224] exit with status 64000
+2017-12-25 17:17:43 pid:47203 Workerman[start.php] stopping ...
+2017-12-25 17:17:43 pid:47203 Workerman[start.php] has been stopped
+2017-12-25 17:19:05 pid:47296 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:19:06 pid:47317 ArgumentCountError: Too few arguments to function DoCrawler::parseNodes(), 1 passed in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php on line 66 and at least 2 expected in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php:137
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/DoCrawler/DoCrawler.php(66): DoCrawler::parseNodes(Object(Components\Crawler\simple_html_dom))
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/SuperCrawler/start.php(28): DoCrawler::fetchQueueTask()
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(157): call_user_func_array(Object(Closure), Array)
+#4 [internal function]: Workerman\Events\Event->timerCallback(-1, 1, Array)
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Event.php(185): EventBase->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Event->loop()
+#7 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#8 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1100): Workerman\Worker::forkWorkersForLinux()
+#10 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(459): Workerman\Worker::forkWorkers()
+#11 /Users/liuweigang/PhpstormProjects/crawler/worker/start.php(32): Workerman\Worker::runAll()
+#12 {main}
+2017-12-25 17:19:06 pid:47317 Worker process terminated
+2017-12-25 17:19:06 pid:47296 worker[SuperCrawler:47317] exit with status 64000
+2017-12-25 17:19:07 pid:47296 Workerman[start.php] stopping ...
+2017-12-25 17:19:07 pid:47296 Workerman[start.php] has been stopped
+2017-12-25 17:19:56 pid:47335 Workerman[start.php] start in DEBUG mode
+2017-12-25 17:20:05 pid:47335 Workerman[start.php] stopping ...
+2017-12-25 17:20:05 pid:47335 Workerman[start.php] has been stopped

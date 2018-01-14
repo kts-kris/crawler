@@ -1,7 +1,7 @@
 {
     "name"  : "workerman/json-rpc",
     "autoload": {
-        "classmap": ["vendor/components/"]
+        "classmap": ["vendor/components/", "vendor/models/", "vendor/config/"]
     },
     "type"  : "project",
     "keywords": ["json","rpc"],

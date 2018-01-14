@@ -40,15 +40,12 @@ class DoCrawler{
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        $message = self::$redis->rPop($queueName);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['availe' => 1, 'worker_id' => '']);
+        $biz = (array) new \Config\Biz;
+        var_dump($accountListArray);
+        return false;
+        //foreach($accountListArray)
 
-        //print $queueName.'=====>'.$message."\n";
-        if(!is_string($message))return false;
-        $messageArray = explode('!~!', $message);
-        $url = isset($messageArray[0]) ? $messageArray[0] : '';
-        $agent = isset($messageArray[1]) ? $messageArray[1] : '';
-        $cookie = isset($messageArray[2]) ? $messageArray[2] : '';
-        $referer = isset($messageArray[3]) ? $messageArray[3] : '';
 
         if(empty($url))return false;
         if(!empty($agent))self::setAgent($agent);

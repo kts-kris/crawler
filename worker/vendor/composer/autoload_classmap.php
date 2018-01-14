@@ -12,4 +12,9 @@ return array(
     'Components\\Crawler\\simple_html_dom_node' => $vendorDir . '/components/crawler/simple_html_dom.php',
     'Components\\Db\\Connection' => $vendorDir . '/components/db/Connection.php',
     'Components\\Db\\JMDbConnectionPageResult' => $vendorDir . '/components/db/Connection.php',
+    'Config\\Biz' => $vendorDir . '/config/Biz.php',
+    'Config\\Db' => $vendorDir . '/config/Db.php',
+    'Config\\Redis' => $vendorDir . '/config/Redis.php',
+    'Models\\ModelBase' => $vendorDir . '/models/ModelBase.php',
+    'config\\PHPClient' => $vendorDir . '/config/PHPClient.php',
 );
