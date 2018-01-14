@@ -57,7 +57,9 @@ class AccountInfo extends ModelBase{
             ->from($this->getTableName())
             ->where($condition);
         if(!empty($limit))$sql = $sql->limit($limit);
-        return $sql->queryAll();
+        $res = $sql->queryAll();
+        print $this->getReadDb()->getLastSql() ."\n";
+        return $res;
     }
 
     /**

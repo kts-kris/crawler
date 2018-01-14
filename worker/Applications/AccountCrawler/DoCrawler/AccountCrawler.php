@@ -142,7 +142,7 @@ class AccountCrawler{
                     $img = $imgBox->find('img', 0);
                     if ($img) {
                         $accountInfoArray[$wxId]['wx_headimg_url'] = htmlspecialchars_decode($img->getAttribute('src'));
-                        $accountInfoArray[$wxId]['wx_headimg'] = file_get_contents($accountInfoArray[$wxId]['wx_headimg_url']);
+                        $accountInfoArray[$wxId]['wx_headimg'] = base64_encode(file_get_contents($accountInfoArray[$wxId]['wx_headimg_url']));
                     }
                 }
 
