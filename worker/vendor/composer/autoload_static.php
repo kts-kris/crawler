@@ -26,6 +26,7 @@ class ComposerStaticInit5e82643e4a188fc18aacdbc471754e0e
         'Components\\Crawler\\simple_html_dom' => __DIR__ . '/..' . '/components/crawler/simple_html_dom.php',
         'Components\\Crawler\\simple_html_dom_node' => __DIR__ . '/..' . '/components/crawler/simple_html_dom.php',
         'Components\\Db\\Connection' => __DIR__ . '/..' . '/components/db/Connection.php',
+        'Components\\Db\\Exception' => __DIR__ . '/..' . '/components/db/Exception.php',
         'Components\\Db\\JMDbConnectionPageResult' => __DIR__ . '/..' . '/components/db/Connection.php',
         'Config\\Biz' => __DIR__ . '/..' . '/config/Biz.php',
         'Config\\Db' => __DIR__ . '/..' . '/config/Db.php',

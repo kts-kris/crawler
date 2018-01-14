@@ -11,6 +11,7 @@ return array(
     'Components\\Crawler\\simple_html_dom' => $vendorDir . '/components/crawler/simple_html_dom.php',
     'Components\\Crawler\\simple_html_dom_node' => $vendorDir . '/components/crawler/simple_html_dom.php',
     'Components\\Db\\Connection' => $vendorDir . '/components/db/Connection.php',
+    'Components\\Db\\Exception' => $vendorDir . '/components/db/Exception.php',
     'Components\\Db\\JMDbConnectionPageResult' => $vendorDir . '/components/db/Connection.php',
     'Config\\Biz' => $vendorDir . '/config/Biz.php',
     'Config\\Db' => $vendorDir . '/config/Db.php',
