@@ -149,12 +149,12 @@ class AccountCrawler{
 
                 if($descBox){
                     $desc = $descBox->find('dd', 0)->innertext();
-                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
+                    $accountInfoArray[$wxId]['wx_desc'] = strip_tags($desc);
                 }
 
                 if($businessBox){
                     $business = $businessBox->find('dd', 0)->innertext();
-                    $accountInfoArray[$wxId]['wx_business'] = $business;
+                    $accountInfoArray[$wxId]['wx_business'] = strip_tags($business);
                 }
 
                 if($lastMessageBox){
