@@ -162,7 +162,7 @@ class AccountCrawler{
                     $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
 //                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
                 }
-//                print $accountInfoArray[$wxId]['wx_qrcode'] . "\n\n";
+                print json_encode($accountInfoArray[$wxId]) . "\n\n";
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
                 \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
