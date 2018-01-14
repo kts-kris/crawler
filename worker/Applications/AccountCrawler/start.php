@@ -10,7 +10,7 @@
 use Workerman\Worker;
 use Workerman\Lib\Timer;
 require_once __DIR__ . '/Clients/StatisticClient.php';
-require_once __DIR__ . '/DoCrawler/DoCrawler.php';
+require_once __DIR__ . '/DoCrawler/AccountCrawler.php';
 
 // 开启的端口
 $worker = new Worker('JsonNL://0.0.0.0:2018');
@@ -25,7 +25,7 @@ $worker->onWorkerStart = function($worker){
     $time_interval = 1;
     Timer::add($time_interval, function(){
         print date('H:i:s', time()) . "\n";
-        AccountCrawler\DoCrawler::fetchQueueTask();
+        AccountCrawler::fetchQueueTask();
     });
 };
 

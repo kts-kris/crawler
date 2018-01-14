@@ -1,8 +1,7 @@
 <?php
-namespace AccountCrawler\DoCrawler;
 use Components\Crawler\Snoopy;
 use Components\Crawler\simple_html_dom;
-class DoCrawler{
+class AccountCrawler{
     private static $referer;
     private static $agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36";
     private static $cookie;
