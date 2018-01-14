@@ -97,10 +97,9 @@ class AccountCrawler{
             }
 
             $nodes = $html->find('.news-list2 li');
+            \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
 
             foreach($nodes as $node){
-                \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
-
                 $imgBox = $node->find('.img-box', 0);
                 $txtBox = $node->find('.txt-box', 0);
                 $qrBox = $node->find('.ew-pop', 0);
