@@ -25,7 +25,7 @@ $worker->onWorkerStart = function($worker){
     $time_interval = 1;
     Timer::add($time_interval, function(){
         print date('H:i:s', time()) . "\n";
-        DoCrawler::fetchQueueTask();
+        AccountCrawler\DoCrawler::fetchQueueTask();
     });
 };
 

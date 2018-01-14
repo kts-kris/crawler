@@ -24,8 +24,8 @@ $worker->onWorkerStart = function($worker){
     // 时间间隔
     $time_interval = 1;
     Timer::add($time_interval, function(){
-        print date('H:i:s', time()) . "\n";
-        DoCrawler::fetchQueueTask();
+        //print date('H:i:s', time()) . "\n";
+        //DoCrawler::fetchQueueTask();
     });
 };
 
