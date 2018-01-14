@@ -62,6 +62,10 @@ class AccountInfo extends ModelBase{
         return $res;
     }
 
+    public function updateAccountInfo($condition, $data){
+        return $this->update($condition, $data);
+    }
+
     /**
      * 更新任务
      * @param array $condition

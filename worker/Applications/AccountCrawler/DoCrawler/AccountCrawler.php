@@ -39,8 +39,9 @@ class AccountCrawler{
             static::$instance = new static();
         }
         sleep(rand(1,10));
+        $runTimeStr = date('YmdH', time());
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <' => date('Y-m-d H:i:s', time()-3600)], 1);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <>' => $runTimeStr], 1);
         $biz = (array) new \Config\Biz;
 //        var_dump($biz);
         //return false;
@@ -163,6 +164,7 @@ class AccountCrawler{
                 }
 //                print $accountInfoArray[$wxId]['wx_qrcode'] . "\n\n";
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
+                \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
             }
         }
