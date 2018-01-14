@@ -65,6 +65,7 @@ class AccountCrawler{
             file_put_contents('/tmp/'.$accountArray['wx_id'].'.html', $content);
             print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
             if($content === false){
+                \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                 return false;
             }
@@ -90,6 +91,7 @@ class AccountCrawler{
             $authBox = $html->find('[name=authform]', 0);
             if($authBox){
                 print '疑似访问被封' . "\n";
+                \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                 return false;
             }
@@ -97,6 +99,8 @@ class AccountCrawler{
             $nodes = $html->find('.news-list2 li');
 
             foreach($nodes as $node){
+                \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
+
                 $imgBox = $node->find('.img-box', 0);
                 $txtBox = $node->find('.txt-box', 0);
                 $qrBox = $node->find('.ew-pop', 0);
@@ -134,6 +138,7 @@ class AccountCrawler{
 
                 }else{
                     print '疑似访问被封' . "\n";
+                    \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                     \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                     return false;
                 }
