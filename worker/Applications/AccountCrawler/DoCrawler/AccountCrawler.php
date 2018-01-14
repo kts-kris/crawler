@@ -144,8 +144,9 @@ class AccountCrawler{
                     $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
 //                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
                 }
+
+                \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
             }
-            return \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray);
         }
 
 
