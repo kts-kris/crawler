@@ -6,7 +6,7 @@
  * Time: 15:24
  */
 
-namespace AccountCrawler\Models;
+namespace Models;
 
 class AccountInfo extends ModelBase{
     /**
