@@ -12,8 +12,8 @@ class AccountCrawler{
     protected function __construct(){
         if(!isset(self::$crawler))self::$crawler=new Snoopy();
         if(!isset(self::$redis)){
-            self::$redis=new Redis();
-            self::$redis->connect('127.0.0.1', 6379);
+            //self::$redis=new Redis();
+            //self::$redis->connect('127.0.0.1', 6379);
         }
     }
 
@@ -34,35 +34,125 @@ class AccountCrawler{
      * @param string $queueName
      * @param int $priority
      */
-    public static function fetchQueueTask($queueName='default', $priority=0){
+    public static function fetchQueueTask($worker_id, $queueName='default', $priority=0){
         if (!static::$instance) {
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0]);
+        //$accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0]);
         $biz = (array) new \Config\Biz;
-        var_dump($accountListArray);
-        return false;
-        //foreach($accountListArray)
+//        var_dump($biz);
+        //return false;
+        $accountListArray = [['title_cn'  =>  '药智网', 'id'=>1, 'wx_id' => 'yaozh008']];
+        $accountInfoArray = [];
+        foreach($accountListArray as $key => $accountArray){
+            $url = sprintf($biz['sogouWxUrls']['searchOaByTitle'], urlencode($accountArray['title_cn']));
+
+            if(empty($url))return false;
+            if(!empty($agent))self::setAgent($agent);
+            if(!empty($cookie))self::setCookie($cookie);
+            if(!empty($referer))self::setReferer($referer);
+
+            self::$crawler->agent = self::$agent;
+            self::$crawler->cookies = self::$cookie;
+            self::$crawler->referer = self::$referer;
 
 
-        if(empty($url))return false;
-        if(!empty($agent))self::setAgent($agent);
-        if(!empty($cookie))self::setCookie($cookie);
-        if(!empty($referer))self::setReferer($referer);
+            \Models\AccountInfo::model()->updateWorderId($accountArray['id'], $worker_id);
+            $content = self::gatherUrl($url);
+            if($content === false)return false;
 
-        self::$crawler->agent = self::$agent;
-        self::$crawler->cookies = self::$cookie;
-        self::$crawler->referer = self::$referer;
 
-        $content = self::gatherUrl($url);
-        if($content === false)return false;
-        $html = self::parseHtml($content);
-        $nextPage = self::parseNextPage($html);
-        $nodes = self::parseNodes($html, 'a');
+            preg_match('/account_anti_url = "([\w\W]*?)"/', $content, $antiArray);
+            //var_dump($antiArray);exit;
+            if(!empty($antiArray[1])){
+                $anti_url = 'http://weixin.sogou.com' . $antiArray[1];
+                self::$crawler->referer = $url;
+                $antiRes = self::gatherUrl($anti_url);
+                if($antiRes === null){
+                    $antiInfoArray = [];
+                }else{
+                    $antiInfoArray = json_decode($antiRes, true);
+//                    var_dump($antiInfoArray);
+                }
+            }
+
+
+            $html = self::parseHtml($content);
+            $nodes = $html->find('.news-list2 li');
+
+            foreach($nodes as $node){
+                $imgBox = $node->find('.img-box', 0);
+                $txtBox = $node->find('.txt-box', 0);
+                $qrBox = $node->find('.ew-pop', 0);
+                $descBox = $node->find('dl', 0);
+                $businessBox = $node->find('dl', 1);
+                $lastMessageBox = $node->find('dl', 2);
+
+                $sogouId = $node->getAttribute('d');
+
+                if($txtBox){
+                    $wxIdBox = $txtBox->find('[name=em_weixinhao]', 0);
+                    $wxId = $wxIdBox->innertext();
+                    if($wxId != $accountArray['wx_id'])continue;
+                    $accountInfoArray[$wxId]['wx_id'] = $wxId;
+                    $accountInfoArray[$wxId]['sogou_id'] = $sogouId;
+                    $articleCountInfo = isset($antiInfoArray['msg'][$sogouId]) ? $antiInfoArray['msg'][$sogouId] : '0,0';
+                    $articleCount = explode(',', $articleCountInfo);
+                    $accountInfoArray[$wxId]['wx_monthly_message_num'] = $articleCount[0];
+                    $accountInfoArray[$wxId]['wx_message_count'] = $articleCount[1];
+                    $wxTitleBox = $txtBox->find('.tit', 0);
+                    if($wxTitleBox){
+                        $wxTitle = $wxTitleBox->find('em', 0)->innertext();
+                        $wxMlBox = $wxTitleBox->find('a', 0);
+                        $wxMlUrl = htmlspecialchars_decode($wxMlBox->getAttribute('href'));
+                        $accountInfoArray[$wxId]['wx_message_list_url'] = $wxMlUrl;
+                    }
+                    $accountInfoArray[$wxId]['wx_name'] = strip_tags($wxTitle);
+
+                }else{
+                    \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
+                    return false;
+                }
+
+                if($qrBox){
+                    $popBox = $qrBox->find('.pop', 0);
+                    $qrImg = $popBox->find('img', 0);
+                    $accountInfoArray[$wxId]['wx_qrcode'] = htmlspecialchars_decode($qrImg->getAttribute('src'));
+                }
+
+                if($imgBox){
+                    $img = $imgBox->find('img', 0);
+                    if ($img) {
+                        $accountInfoArray[$wxId]['wx_headimg_url'] = htmlspecialchars_decode($img->getAttribute('src'));
+                        $accountInfoArray[$wxId]['wx_headimg'] = file_get_contents($accountInfoArray[$wxId]['wx_headimg_url']);
+                    }
+                }
+
+                if($descBox){
+                    $desc = $descBox->find('dd', 0)->innertext();
+                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
+                }
+
+                if($businessBox){
+                    $business = $businessBox->find('dd', 0)->innertext();
+                    $accountInfoArray[$wxId]['wx_business'] = $business;
+                }
+
+                if($lastMessageBox){
+                    $lastMessageTitle = $lastMessageBox->find('a', 0)->innertext();
+                    $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
+//                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
+                }
+            }
+            return \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray);
+        }
+
+
+
 
 //        return ['html'=>$html, '']
-        var_dump($nextPage);
+
     }
 
     public static function setReferer($url){

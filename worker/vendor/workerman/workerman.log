@@ -913,3 +913,120 @@ Stack trace:
 2018-01-14 16:07:59 pid:91996 worker[SuperCrawler:92027] exit with status 65280
 2018-01-14 16:07:59 pid:91996 Workerman[start.php] stopping ...
 2018-01-14 16:08:00 pid:91996 Workerman[start.php] has been stopped
+2018-01-14 16:45:20 pid:92825 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:45:21 pid:92826 Worker process terminated with ERROR: E_ERROR "Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed and exactly 1 expected in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php:26
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php on line 26"
+2018-01-14 16:45:21 pid:92825 worker[AccountCrawler:92826] exit with status 65280
+2018-01-14 16:45:22 pid:92825 Workerman[start.php] stopping ...
+2018-01-14 16:45:22 pid:92825 Workerman[start.php] has been stopped
+2018-01-14 16:47:21 pid:92874 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:47:22 pid:92875 Worker process terminated with ERROR: E_ERROR "Uncaught ArgumentCountError: Too few arguments to function {closure}(), 0 passed and exactly 2 expected in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php:27
+Stack trace:
+#0 [internal function]: {closure}()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php on line 27"
+2018-01-14 16:47:22 pid:92874 worker[AccountCrawler:92875] exit with status 65280
+2018-01-14 16:47:23 pid:92874 Workerman[start.php] stopping ...
+2018-01-14 16:47:23 pid:92874 Workerman[start.php] has been stopped
+2018-01-14 16:47:47 pid:92915 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:47:48 pid:92916 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Class 'Redis' not found in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/DoCrawler/AccountCrawler.php:15
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/DoCrawler/AccountCrawler.php(39): AccountCrawler->__construct()
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php(29): AccountCrawler::fetchQueueTask(0)
+#2 [internal function]: {closure}()
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#7 /Users/ in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/DoCrawler/AccountCrawler.php on line 15"
+2018-01-14 16:47:48 pid:92915 worker[AccountCrawler:92916] exit with status 65280
+2018-01-14 16:47:48 pid:92915 Workerman[start.php] stopping ...
+2018-01-14 16:47:48 pid:92915 Workerman[start.php] has been stopped
+2018-01-14 16:48:03 pid:92960 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:48:04 pid:92961 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 16:48:04 pid:92960 worker[AccountCrawler:92961] exit with status 65280
+2018-01-14 16:48:05 pid:92960 Workerman[start.php] stopping ...
+2018-01-14 16:48:05 pid:92960 Workerman[start.php] has been stopped
+2018-01-14 16:48:20 pid:93000 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:48:22 pid:93000 Workerman[start.php] stopping ...
+2018-01-14 16:48:22 pid:93000 Workerman[start.php] has been stopped
+2018-01-14 16:48:43 pid:93042 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:48:44 pid:93042 Workerman[start.php] stopping ...
+2018-01-14 16:48:44 pid:93042 Workerman[start.php] has been stopped
+2018-01-14 16:49:00 pid:93087 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:49:02 pid:93087 Workerman[start.php] stopping ...
+2018-01-14 16:49:02 pid:93087 Workerman[start.php] has been stopped
+2018-01-14 16:49:19 pid:93131 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:49:20 pid:93131 Workerman[start.php] stopping ...
+2018-01-14 16:49:20 pid:93131 Workerman[start.php] has been stopped
+2018-01-14 16:49:34 pid:93166 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:49:36 pid:93166 Workerman[start.php] stopping ...
+2018-01-14 16:49:36 pid:93166 Workerman[start.php] has been stopped
+2018-01-14 16:50:10 pid:93216 Workerman[start.php] start in DEBUG mode
+2018-01-14 16:50:11 pid:93216 Workerman[start.php] stopping ...
+2018-01-14 16:50:13 pid:93216 worker[AccountCrawler:93217] exit with status 9
+2018-01-14 16:50:13 pid:93216 Workerman[start.php] has been stopped
+2018-01-14 17:06:27 pid:93395 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:06:30 pid:93395 Workerman[start.php] stopping ...
+2018-01-14 17:06:30 pid:93395 Workerman[start.php] has been stopped
+2018-01-14 17:08:31 pid:93458 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:08:34 pid:93458 Workerman[start.php] stopping ...
+2018-01-14 17:08:35 pid:93459 Worker process terminated
+2018-01-14 17:08:35 pid:93458 Workerman[start.php] has been stopped
+2018-01-14 17:08:42 pid:93493 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:08:44 pid:93493 Workerman[start.php] stopping ...
+2018-01-14 17:08:44 pid:93493 Workerman[start.php] has been stopped
+2018-01-14 17:10:08 pid:93549 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:10:10 pid:93549 Workerman[start.php] stopping ...
+2018-01-14 17:10:12 pid:93549 worker[AccountCrawler:93550] exit with status 9
+2018-01-14 17:10:12 pid:93549 Workerman[start.php] has been stopped
+2018-01-14 17:10:54 pid:93596 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:10:56 pid:93596 Workerman[start.php] stopping ...
+2018-01-14 17:10:56 pid:93596 Workerman[start.php] has been stopped
+2018-01-14 17:29:16 pid:94049 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:29:18 pid:94051 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to undefined method Components\Crawler\simple_html_dom_node::innerhtml() in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/DoCrawler/AccountCrawler.php:89
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/start.php(29): AccountCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Wor in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/AccountCrawler/DoCrawler/AccountCrawler.php on line 89"
+2018-01-14 17:29:18 pid:94049 worker[AccountCrawler:94051] exit with status 65280
+2018-01-14 17:29:19 pid:94049 Workerman[start.php] stopping ...
+2018-01-14 17:29:19 pid:94049 Workerman[start.php] has been stopped
+2018-01-14 17:30:04 pid:94108 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:30:05 pid:94108 Workerman[start.php] stopping ...
+2018-01-14 17:30:08 pid:94108 worker[AccountCrawler:94109] exit with status 9
+2018-01-14 17:30:08 pid:94108 Workerman[start.php] has been stopped
+2018-01-14 17:30:52 pid:94153 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:30:55 pid:94153 Workerman[start.php] stopping ...
+2018-01-14 17:30:55 pid:94153 Workerman[start.php] has been stopped
+2018-01-14 17:38:37 pid:94286 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:38:39 pid:94286 Workerman[start.php] stopping ...
+2018-01-14 17:38:39 pid:94286 Workerman[start.php] has been stopped
+2018-01-14 17:44:26 pid:94400 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:44:31 pid:94400 Workerman[start.php] stopping ...
+2018-01-14 17:44:31 pid:94400 Workerman[start.php] has been stopped
+2018-01-14 17:45:18 pid:94445 Workerman[start.php] start in DEBUG mode
+2018-01-14 17:45:20 pid:94445 Workerman[start.php] stopping ...
+2018-01-14 17:45:20 pid:94445 Workerman[start.php] has been stopped

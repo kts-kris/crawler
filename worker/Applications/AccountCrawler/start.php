@@ -23,9 +23,10 @@ $worker->name = 'AccountCrawler';
 $worker->onWorkerStart = function($worker){
     // 时间间隔
     $time_interval = 1;
-    Timer::add($time_interval, function(){
+    $connection_time = time();
+    Timer::add($time_interval, function() use($worker, $connection_time){
         print date('H:i:s', time()) . "\n";
-        AccountCrawler::fetchQueueTask();
+        AccountCrawler::fetchQueueTask($worker->id);
     });
 };
 
