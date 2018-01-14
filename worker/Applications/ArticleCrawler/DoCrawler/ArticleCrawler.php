@@ -109,8 +109,8 @@ class ArticleCrawler{
                     'multi_app_msg_item_list'   =>  json_encode($node['app_msg_ext_info']['multi_app_msg_item_list']),
                     'source_url'                =>  $node['app_msg_ext_info']['source_url'],
                     'subtype'                   =>  $node['app_msg_ext_info']['subtype'],
-                    'comm_msg_info'             =>  json_encode($node['app_msg_ext_info']['comm_msg_info']),
-                    'publish_time'              =>  $node['app_msg_ext_info']['comm_msg_info']['datetime']
+                    'comm_msg_info'             =>  json_encode($node['comm_msg_info']),
+                    'publish_time'              =>  $node['comm_msg_info']['datetime']
                 ];
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
