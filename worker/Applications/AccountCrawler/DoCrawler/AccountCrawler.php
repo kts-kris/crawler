@@ -123,6 +123,7 @@ class AccountCrawler{
                     $accountInfoArray[$wxId]['wx_name'] = strip_tags($wxTitle);
 
                 }else{
+                    print '疑似访问被封' . "\n";
                     \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                     return false;
                 }
