@@ -6,7 +6,7 @@
  * Time: 20:46
  */
 
-
+namespace AccountCrawler\Services;
 class Crawler{
     /**
      * 加入抓取队列

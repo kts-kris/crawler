@@ -1,5 +1,5 @@
 <?php
-
+namespace AccountCrawler\DoCrawler;
 use Components\Crawler\Snoopy;
 use Components\Crawler\simple_html_dom;
 class DoCrawler{
