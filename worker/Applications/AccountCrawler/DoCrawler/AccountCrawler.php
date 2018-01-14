@@ -111,7 +111,7 @@ class AccountCrawler{
                     $wxId = $wxIdBox->innertext();
                     print 'html:'.$wxId.', db:'.$accountArray['wx_id']."\n";
                     if($wxId != $accountArray['wx_id']){
-                        //\Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
+                        \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['update_time' => $runTimeStr]);
                         \Models\AccountInfo::model()->updateAccountInfo(['id' => $accountArray['id']], ['wx_id' => $wxId]);
                         \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                         continue;
