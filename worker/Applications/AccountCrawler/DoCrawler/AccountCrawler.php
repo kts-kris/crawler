@@ -103,7 +103,8 @@ class AccountCrawler{
                     $accountInfoArray[$wxId]['wx_message_count'] = $articleCount[1];
                     $wxTitleBox = $txtBox->find('.tit', 0);
                     if($wxTitleBox){
-                        $wxTitle = $wxTitleBox->find('em', 0)->innertext();
+                        $wxTitle = $wxTitleBox->find('em', 0);
+                        $wxTitle = $wxTitle->innertext();
                         $wxMlBox = $wxTitleBox->find('a', 0);
                         $wxMlUrl = htmlspecialchars_decode($wxMlBox->getAttribute('href'));
                         $accountInfoArray[$wxId]['wx_message_list_url'] = $wxMlUrl;
@@ -111,7 +112,7 @@ class AccountCrawler{
                     $accountInfoArray[$wxId]['wx_name'] = strip_tags($wxTitle);
 
                 }else{
-                    \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
+                    //\Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                     return false;
                 }
 

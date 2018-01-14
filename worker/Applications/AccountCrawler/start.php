@@ -22,7 +22,7 @@ $worker->name = 'AccountCrawler';
 //自动启动抓取
 $worker->onWorkerStart = function($worker){
     // 时间间隔
-    $time_interval = 1;
+    $time_interval = 5;
     $connection_time = time();
     Timer::add($time_interval, function() use($worker, $connection_time){
         print date('H:i:s', time()) . "\n";
