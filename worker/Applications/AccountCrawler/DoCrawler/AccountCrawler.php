@@ -39,11 +39,11 @@ class AccountCrawler{
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        //$accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0]);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0]);
         $biz = (array) new \Config\Biz;
 //        var_dump($biz);
         //return false;
-        $accountListArray = [['title_cn'  =>  '药智网', 'id'=>1, 'wx_id' => 'yaozh008']];
+        //$accountListArray = [['title_cn'  =>  '药智网', 'id'=>1, 'wx_id' => 'yaozh008']];
         $accountInfoArray = [];
         foreach($accountListArray as $key => $accountArray){
             $url = sprintf($biz['sogouWxUrls']['searchOaByTitle'], urlencode($accountArray['title_cn']));
