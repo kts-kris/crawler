@@ -38,6 +38,7 @@ class AccountCrawler{
         if (!static::$instance) {
             static::$instance = new static();
         }
+        sleep(rand(1,10));
         //TODO 获取队列内容并解析
         $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <' => date('Y-m-d H:i:s', time()-300)], 1);
         $biz = (array) new \Config\Biz;
@@ -47,7 +48,7 @@ class AccountCrawler{
         $accountInfoArray = [];
         foreach($accountListArray as $key => $accountArray){
             $url = sprintf($biz['sogouWxUrls']['searchOaByTitle'], urlencode($accountArray['title_cn']));
-
+            print $url . "\n";
             if(empty($url))return false;
             if(!empty($agent))self::setAgent($agent);
             if(!empty($cookie))self::setCookie($cookie);
@@ -60,6 +61,8 @@ class AccountCrawler{
 
             \Models\AccountInfo::model()->updateWorderId($accountArray['id'], $worker_id);
             $content = self::gatherUrl($url);
+            file_put_contents('/tmp/'.$accountArray['wx_id'].'.html', $content);
+            print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
             if($content === false){
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
                 return false;
@@ -157,9 +160,10 @@ class AccountCrawler{
                     $lastMessageUrl = $lastMessageBox->find('a', 0)->getAttribute('href');
 //                    $accountInfoArray[$wxId]['wx_desc'] = $desc;
                 }
+                print json_encode($accountInfoArray[$wxId]) . "\n\n";
+
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
-                sleep(rand(1,10));
             }
         }
 
