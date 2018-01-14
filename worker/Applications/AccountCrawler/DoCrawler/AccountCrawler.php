@@ -39,7 +39,7 @@ class AccountCrawler{
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['availe' => 1, 'worker_id' => '']);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => '']);
         $biz = (array) new \Config\Biz;
         var_dump($accountListArray);
         return false;
