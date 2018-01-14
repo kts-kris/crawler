@@ -74,7 +74,7 @@ class OfficalAccount extends ModelBase {
         if(isset($data['wx_id'])){
             $res = $this->getOfficalAccount(['wx_id'=>$data['wx_id']]);
             var_dump($res);
-            if(isset($res[0]['sogou_id'])){
+            if(!isset($res[0]['sogou_id'])){
                 return $this->getWriteDb()->insert($this->getTableName(), $data);
             }
         }
