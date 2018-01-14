@@ -51,12 +51,13 @@ class AccountInfo extends ModelBase{
      * @param array $condition
      * @return mixed
      */
-    public function getAllAccounts($condition=array('avail'=>1)){
-        return $this->getReadDb()
+    public function getAllAccounts($condition=array('avail'=>1), $limit=null){
+        $sql = $this->getReadDb()
             ->select('*')
             ->from($this->getTableName())
-            ->where($condition)
-            ->queryAll();
+            ->where($condition);
+        if(!empty($limit))$sql = $sql->limit($limit);
+        return $sql->queryAll();
     }
 
     /**

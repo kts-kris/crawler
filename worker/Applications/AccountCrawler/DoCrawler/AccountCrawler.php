@@ -39,7 +39,7 @@ class AccountCrawler{
             static::$instance = new static();
         }
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0]);
+        $accountListArray = \Models\AccountInfo::model()->getAllAccounts(['avail' => 1, 'worker_id' => 0, 'update_time <' => date('Y-m-d H:i:s', time())], 1);
         $biz = (array) new \Config\Biz;
 //        var_dump($biz);
         //return false;
@@ -62,7 +62,6 @@ class AccountCrawler{
             $content = self::gatherUrl($url);
             if($content === false)return false;
 
-
             preg_match('/account_anti_url = "([\w\W]*?)"/', $content, $antiArray);
             //var_dump($antiArray);exit;
             if(!empty($antiArray[1])){
@@ -79,6 +78,14 @@ class AccountCrawler{
 
 
             $html = self::parseHtml($content);
+
+            //抓取被封检测
+            $authBox = $html->find('[name=authform]', 0);
+            if($authBox){
+                print '疑似访问被封';
+                return false;
+            }
+
             $nodes = $html->find('.news-list2 li');
 
             foreach($nodes as $node){

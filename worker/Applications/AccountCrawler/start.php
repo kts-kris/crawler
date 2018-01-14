@@ -15,7 +15,7 @@ require_once __DIR__ . '/DoCrawler/AccountCrawler.php';
 // 开启的端口
 $worker = new Worker('JsonNL://0.0.0.0:2018');
 // 启动多少服务进程
-$worker->count = 1;
+$worker->count = 2;
 // worker名称，php start.php status 时展示使用
 $worker->name = 'AccountCrawler';
 
