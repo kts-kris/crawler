@@ -41,9 +41,9 @@ class ArticleCrawler{
         sleep(rand(1,10));
         $runTimeStr = date('YmdH', time());
         //TODO 获取队列内容并解析
-        $accountListArray = \Models\Article::model()->getArticle(['avail' => 1, 'worker_id' => 0, 'update_time <>' => $runTimeStr], 1);
+        $accountListArray = \Models\OfficalAccount::model()->getOfficalAccount(['avail' => 1, 'worker_id' => 0, 'update_time <>' => $runTimeStr], 1);
 //        $biz = (array) new \Config\Biz;
-//        var_dump($biz);
+//        var_dump($accountListArray);
         //return false;
 //        $accountListArray = [['wx_message_list_url'  =>  'https://mp.weixin.qq.com/profile?src=3&timestamp=1515936879&ver=1&signature=sO4m4OCcy3nJVhPiPlrT-UrkEnTgW8R14M9yeK7OUUCvmPZChs0MWFFDZ21D1zCDaNLYB0hSYuG9vN*izEoYRA==', 'id'=>1, 'wx_id' => 'yaozh008']];
 //        $accountInfoArray = [];
