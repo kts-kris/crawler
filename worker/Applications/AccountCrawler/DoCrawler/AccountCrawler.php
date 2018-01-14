@@ -159,6 +159,7 @@ class AccountCrawler{
                 }
                 \Models\OfficalAccount::model()->updateOfficalAccountInfo($accountInfoArray[$wxId]);
                 \Models\AccountInfo::model()->updateWorderId($accountArray['id'], 0);
+                sleep(rand(1,10));
             }
         }
 
