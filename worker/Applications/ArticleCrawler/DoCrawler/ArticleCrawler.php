@@ -119,9 +119,10 @@ class ArticleCrawler{
                 ];
 //                print json_encode($msgListArray) ."\n\n";
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
-                \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
-                \Models\OfficalAccount::model()->updateWorderId($accountArray['wx_id'], 0);
             }
+
+            \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
+            \Models\OfficalAccount::model()->updateWorderId($accountArray['wx_id'], 0);
         }
 
 

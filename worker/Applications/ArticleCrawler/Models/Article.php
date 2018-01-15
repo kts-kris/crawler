@@ -60,7 +60,10 @@ class Article extends ModelBase{
     public function updateArticle($condition, $data){
         $res = $this->getArticle($condition);
         if(empty($res[0]['wx_id'])){
-            return $this->getWriteDb()->insert($this->getTableName(), $data);
+            $data['create_time'] = date('Y-m-d H:i:s', time());
+            $res = $this->getWriteDb()->insert($this->getTableName(), $data);
+            print $this->getWriteDb()->getLastSql() . "\n";
+            return $res;
         }
         return $this->update($condition, $data);
     }
