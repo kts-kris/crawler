@@ -49,7 +49,7 @@ class ArticleCrawler{
 //        $accountInfoArray = [];
         foreach($accountListArray as $key => $accountArray){
             $url = $accountArray['wx_message_list_url'];
-            print $url . "\n";
+//            print $url . "\n";
             if(empty($url))return false;
             if(!empty($agent))self::setAgent($agent);
             if(!empty($cookie))self::setCookie($cookie);
@@ -67,7 +67,7 @@ class ArticleCrawler{
                 \Models\Article::model()->updateWorderId($accountArray['wx_id'], 0);
                 return false;
             }
-            print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
+//            print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
 
             preg_match('/msgList = ([\w\W]*?)};/', $content, $msgList);
             //var_dump($msgList);
@@ -123,7 +123,7 @@ class ArticleCrawler{
                 }
 
                 print $msgInfoArray['title'] ."\n";
-                \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
+                \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id'], 'article_id' => $msgInfoArray['article_id']], $msgInfoArray);
             }
 
             \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
