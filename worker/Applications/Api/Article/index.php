@@ -90,8 +90,10 @@ $app->group('/article', function () {
             default:
                 $typeStr = 'article_publish_time desc';
         }
-
+        Capsule::connection()->enableQueryLog();
         $article = Capsule::select("select pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
+        $res = Capsule::connection()->getQueryLog();
+        var_dump($res);
         $data = [
             'data'      =>  $article,
             'status'    =>  200,
