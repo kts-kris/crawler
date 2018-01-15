@@ -22,7 +22,7 @@ $worker->name = 'ArticleCrawler';
 //自动启动抓取
 $worker->onWorkerStart = function($worker){
     // 时间间隔
-    $time_interval = 10;
+    $time_interval = 30;
     $connection_time = time();
     Timer::add($time_interval, function() use($worker, $connection_time){
         print $worker->name . ':' . date('H:i:s', time()) . "\n";
