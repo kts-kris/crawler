@@ -14,7 +14,9 @@ use \Workerman\WebServer;
 $webserver = new WebServer('http://0.0.0.0:8080');
 $webserver->name = 'Api';
 $webserver->addRoot('www.qusu.com', __DIR__.'/Article');
-
+\Workerman\Protocols\Http::header('Access-Control-Allow-Origin: *');
+\Workerman\Protocols\Http::header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
+\Workerman\Protocols\Http::header('Access-Control-Allow-Methods: GET, POST, PUT,OPTIONS');
 // 设置开启多少进程
 $webserver->count = 4;
 
