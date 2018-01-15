@@ -65,7 +65,7 @@ $app->get('/account/{id}', function (Request $request, Response $response, array
     return $response;
 });
 
-$app->group('/article/', function () {
+$app->group('/article', function () {
     $this->get('/list/type/{type}[/{pageSize}[/{page}]]', function ($request, $response, $args) {
         $type = $args['type'];
         $pageSize = isset($args['pageSize']) ? $args['pageSize'] : 10;
