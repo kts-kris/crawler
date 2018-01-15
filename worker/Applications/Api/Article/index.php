@@ -44,7 +44,7 @@ $capsule->bootEloquent();
 $app = new \Slim\App;
 
 $app->add(function ($request, $response, $next) {
-    $response->headers->set('Access-Control-Allow-Origin: *');
+    $response = $response->withHeader('Access-Control-Allow-Origin','*');
     $response = $next($request, $response);
     return $response;
 });
@@ -52,7 +52,6 @@ $app->add(function ($request, $response, $next) {
 $app->get('/account/{id}', function (Request $request, Response $response, array $args) {
     $id = $args['id'];
     $account = Capsule::table('offical_account')->where('wx_id', '=', $id)->get();
-
     $response = $response->withStatus(200)->withHeader('Content-type', 'application/json');
     $response->getBody()->write(json_encode(
             [
