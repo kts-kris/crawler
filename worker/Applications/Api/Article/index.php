@@ -81,7 +81,7 @@ $app->group('/article', function () {
                 $typeStr = 'article_publish_time desc';
         }
 
-        $article = Capsule::select("select * from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
+        $article = Capsule::select("select articles.article_title, articles.article_brief, articles.article_images, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_tmp_url from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
 
         $data = [
             'data'      =>  $article,
@@ -95,7 +95,7 @@ $app->group('/article', function () {
     $this->get('/detail/{id}', function($request, $response, $args){
         $id = $args['id'];
 
-        $article = Capsule::select("select * from articles where id = ? ", array($id));
+        $article = Capsule::select("select * from articles where pid = ? ", array($id));
         $data = [
             'data'      =>  $article,
             'status'    =>  200,
