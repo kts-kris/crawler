@@ -13,6 +13,8 @@ return array(
     'Components\\Db\\Connection' => $vendorDir . '/components/db/Connection.php',
     'Components\\Db\\Exception' => $vendorDir . '/components/db/Exception.php',
     'Components\\Db\\JMDbConnectionPageResult' => $vendorDir . '/components/db/Connection.php',
+    'Components\\Utils\\Compare' => $vendorDir . '/components/utils/Compare.php',
+    'Components\\Utils\\ID' => $vendorDir . '/components/utils/ID.php',
     'Config\\Biz' => $vendorDir . '/config/Biz.php',
     'Config\\Db' => $vendorDir . '/config/Db.php',
     'Config\\Redis' => $vendorDir . '/config/Redis.php',

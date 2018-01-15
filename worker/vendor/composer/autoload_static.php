@@ -28,6 +28,8 @@ class ComposerStaticInit5e82643e4a188fc18aacdbc471754e0e
         'Components\\Db\\Connection' => __DIR__ . '/..' . '/components/db/Connection.php',
         'Components\\Db\\Exception' => __DIR__ . '/..' . '/components/db/Exception.php',
         'Components\\Db\\JMDbConnectionPageResult' => __DIR__ . '/..' . '/components/db/Connection.php',
+        'Components\\Utils\\Compare' => __DIR__ . '/..' . '/components/utils/Compare.php',
+        'Components\\Utils\\ID' => __DIR__ . '/..' . '/components/utils/ID.php',
         'Config\\Biz' => __DIR__ . '/..' . '/config/Biz.php',
         'Config\\Db' => __DIR__ . '/..' . '/config/Db.php',
         'Config\\Redis' => __DIR__ . '/..' . '/config/Redis.php',
