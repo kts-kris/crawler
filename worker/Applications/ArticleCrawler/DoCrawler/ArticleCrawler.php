@@ -117,9 +117,9 @@ class ArticleCrawler{
                     'comm_msg_info'             =>  json_encode($node['comm_msg_info']),
                     'publish_time'              =>  $node['comm_msg_info']['datetime']
                 ];
-                print json_encode($msgListArray) ."\n\n";
+//                print json_encode($msgListArray) ."\n\n";
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
-                \Models\OfficalAccount::model()->updateArticle(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
+                \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
                 \Models\OfficalAccount::model()->updateWorderId($accountArray['wx_id'], 0);
             }
         }

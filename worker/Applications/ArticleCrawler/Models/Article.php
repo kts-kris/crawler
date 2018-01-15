@@ -59,7 +59,7 @@ class Article extends ModelBase{
 
     public function updateArticle($condition, $data){
         $res = $this->getArticle($condition);
-        if(!empty($res[0]['wx_id'])){
+        if(empty($res[0]['wx_id'])){
             return $this->getWriteDb()->insert($this->getTableName(), $data);
         }
         return $this->update($condition, $data);
