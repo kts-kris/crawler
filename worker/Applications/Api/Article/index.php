@@ -43,10 +43,14 @@ $capsule->bootEloquent();
 
 $app = new \Slim\App;
 
+$app->add(function ($request, $response, $next) {
+    $response->headers->set('Access-Control-Allow-Origin: *');
+    $response = $next($request, $response);
+    return $response;
+});
 
 $app->get('/account/{id}', function (Request $request, Response $response, array $args) {
     $id = $args['id'];
-
     $account = Capsule::table('offical_account')->where('wx_id', '=', $id)->get();
 
     $response = $response->withStatus(200)->withHeader('Content-type', 'application/json');
@@ -81,8 +85,7 @@ $app->group('/article', function () {
                 $typeStr = 'article_publish_time desc';
         }
 
-        $article = Capsule::select("select articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
-
+        $article = Capsule::select("select pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
         $data = [
             'data'      =>  $article,
             'status'    =>  200,
