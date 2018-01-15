@@ -47,6 +47,8 @@ $app->add(function ($request, $response, $next) {
     $response = $response->withHeader('Access-Control-Allow-Origin','*');
     //$response = $response->withAddedHeader('Access-Control-Allow-Origin','*');
     $response = $next($request, $response);
+    $response = $response->withHeader('Access-Control-Allow-Origin','*');
+
     return $response;
 });
 
@@ -92,7 +94,8 @@ $app->group('/article', function () {
             'code'      =>  '',
             'message'   =>  ''
         ];
-        return $response->withJson($data, 200)->withHeader('Access-Control-Allow-Origin','*');
+        $response = $response->withHeader('Access-Control-Allow-Origin','*');
+        return $response->withJson($data, 200);
     })->setName('list-article');
 
     $this->get('/detail/{id}', function($request, $response, $args){
@@ -105,7 +108,9 @@ $app->group('/article', function () {
             'code'      =>  '',
             'message'   =>  ''
         ];
-        return $response->withJson($data, 200)->withHeader('Access-Control-Allow-Origin','*');
+        $response = $response->withHeader('Access-Control-Allow-Origin','*');
+
+        return $response->withJson($data, 200);
     });
 });
 
