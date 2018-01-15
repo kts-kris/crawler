@@ -8,6 +8,9 @@
     "homepage": "http://www.workerman.net",
     "license" : "MIT",
     "require": {
-        "workerman/statistics" : ">=1.0.0"
+        "workerman/statistics" : ">=1.0.0",
+        "slim/slim": "^3.0",
+        "illuminate/database": "^5.5",
+        "Illuminate/Events": "^5.5"
     }
 }
