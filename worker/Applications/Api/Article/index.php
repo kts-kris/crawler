@@ -92,7 +92,11 @@ $app->group('/article', function () {
         }
         //Capsule::connection()->enableQueryLog();
 //        $article = Capsule::table('articles')->select(['pid', 'articles.article_title', 'articles.article_brief', 'articles.article_thumbnail', 'articles.article_author', "FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time", 'articles.wx_title_cn', 'articles.wx_id', 'articles.weixin_avatar'])->where("article_title", '<>', "")->orderby($typeStr, 'desc')->limit($pageSize)->get();
-        $article = Capsule::select("select pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
+        $article = Capsule::select("select pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, date_format(FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d')) as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize))->get();
+//        $article = \Models\Articles::where("article_title", '<>', "")
+//                    ->orderBy($typeStr, 'desc')
+//                    ->take($pageSize)
+//                    ->get();
         //$res = Capsule::connection()->getQueryLog();
         //var_dump($res);
         $data = [
