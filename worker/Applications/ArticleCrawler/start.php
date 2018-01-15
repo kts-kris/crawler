@@ -25,7 +25,7 @@ $worker->onWorkerStart = function($worker){
     $time_interval = 10;
     $connection_time = time();
     Timer::add($time_interval, function() use($worker, $connection_time){
-        print date('H:i:s', time()) . "\n";
+        print $worker->name . ':' . date('H:i:s', time()) . "\n";
         ArticleCrawler::fetchQueueTask($worker->id);
     });
 };

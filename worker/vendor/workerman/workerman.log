@@ -1030,3 +1030,166 @@ Stack trace:
 2018-01-14 17:45:18 pid:94445 Workerman[start.php] start in DEBUG mode
 2018-01-14 17:45:20 pid:94445 Workerman[start.php] stopping ...
 2018-01-14 17:45:20 pid:94445 Workerman[start.php] has been stopped
+2018-01-14 21:47:41 pid:96726 Workerman[start.php] start in DEBUG mode
+2018-01-14 21:47:55 pid:96727 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 21:47:55 pid:96726 worker[AccountCrawler:96727] exit with status 65280
+2018-01-14 21:47:56 pid:96728 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 21:47:56 pid:96726 worker[ArticleCrawler:96728] exit with status 65280
+2018-01-14 21:47:56 pid:96726 Workerman[start.php] stopping ...
+2018-01-14 21:47:57 pid:96726 Workerman[start.php] has been stopped
+2018-01-14 21:48:57 pid:96778 Workerman[start.php] start in DEBUG mode
+2018-01-14 21:49:11 pid:96779 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 21:49:11 pid:96778 worker[ArticleCrawler:96779] exit with status 65280
+2018-01-14 21:49:12 pid:96778 Workerman[start.php] stopping ...
+2018-01-14 21:49:12 pid:96778 Workerman[start.php] has been stopped
+2018-01-14 21:50:06 pid:96819 Workerman[start.php] start in DEBUG mode
+2018-01-14 21:50:25 pid:96820 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 21:50:25 pid:96819 worker[ArticleCrawler:96820] exit with status 65280
+2018-01-14 21:50:26 pid:96819 Workerman[start.php] stopping ...
+2018-01-14 21:50:26 pid:96819 Workerman[start.php] has been stopped
+2018-01-14 21:55:51 pid:96927 Workerman[start.php] start in DEBUG mode
+2018-01-14 21:56:09 pid:96928 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 21:56:09 pid:96927 worker[AccountCrawler:96928] exit with status 65280
+2018-01-14 21:56:09 pid:96929 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 21:56:09 pid:96927 worker[ArticleCrawler:96929] exit with status 65280
+2018-01-14 21:56:10 pid:96927 Workerman[start.php] stopping ...
+2018-01-14 21:56:10 pid:96927 Workerman[start.php] has been stopped
+2018-01-14 22:04:24 pid:97079 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:04:36 pid:97080 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:04:36 pid:97079 worker[AccountCrawler:97080] exit with status 65280
+2018-01-14 22:04:36 pid:97079 Workerman[start.php] stopping ...
+2018-01-14 22:04:38 pid:97079 worker[ArticleCrawler:97081] exit with status 9
+2018-01-14 22:04:38 pid:97079 Workerman[start.php] has been stopped
+2018-01-14 22:04:45 pid:97113 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:04:58 pid:97114 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:04:58 pid:97113 worker[AccountCrawler:97114] exit with status 65280
+2018-01-14 22:05:01 pid:97115 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 22:05:01 pid:97113 worker[ArticleCrawler:97115] exit with status 65280
+2018-01-14 22:05:05 pid:97113 Workerman[start.php] stopping ...
+2018-01-14 22:05:05 pid:97113 Workerman[start.php] has been stopped
+2018-01-14 22:06:34 pid:97164 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:06:47 pid:97165 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:06:47 pid:97164 worker[AccountCrawler:97165] exit with status 65280
+2018-01-14 22:06:47 pid:97166 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to a member function find() on boolean in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php:90
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/start.php(29): ArticleCrawler::fetchQueueTask(0)
+#1 [internal function]: {closure}()
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(233): call_user_func_array(Object(Closure), Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Events/Select.php(274): Workerman\Events\Select->tick()
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(2096): Workerman\Events\Select->loop()
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1294): Workerman\Worker->run()
+#6 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/workerman/workerman/Worker.php(1127): Workerman\Worker::forkOneWorkerForLin in /Users/liuweigang/PhpstormProjects/crawler/worker/Applications/ArticleCrawler/DoCrawler/ArticleCrawler.php on line 90"
+2018-01-14 22:06:47 pid:97164 worker[ArticleCrawler:97166] exit with status 65280
+2018-01-14 22:06:48 pid:97164 Workerman[start.php] stopping ...
+2018-01-14 22:06:48 pid:97164 Workerman[start.php] has been stopped
+2018-01-14 22:16:44 pid:97279 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:17:00 pid:97280 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:17:00 pid:97279 worker[AccountCrawler:97280] exit with status 65280
+2018-01-14 22:17:00 pid:97279 Workerman[start.php] stopping ...
+2018-01-14 22:17:01 pid:97279 Workerman[start.php] has been stopped
+2018-01-14 22:17:52 pid:97328 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:18:06 pid:97329 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:18:06 pid:97328 worker[AccountCrawler:97329] exit with status 65280
+2018-01-14 22:18:15 pid:97328 Workerman[start.php] stopping ...
+2018-01-14 22:18:15 pid:97328 Workerman[start.php] has been stopped
+2018-01-14 22:19:06 pid:97380 Workerman[start.php] start in DEBUG mode
+2018-01-14 22:19:18 pid:97381 Worker process terminated with ERROR: E_ERROR "Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php:460
+Stack trace:
+#0 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(460): PDO->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#1 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(148): Components\Db\Connection->connect('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#2 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(407): Components\Db\Connection->__construct('mysql:dbname=we...', 'root', '1q2w3e!@#', Array)
+#3 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php(389): Components\Db\Connection->addReadConnection('weixin')
+#4 /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/models/ModelBase.php(571): Components\Db\Connection->read('weixin')
+#5 /Users/liuweigang/PhpstormProjects/crawler/worker in /Users/liuweigang/PhpstormProjects/crawler/worker/vendor/components/db/Connection.php on line 460"
+2018-01-14 22:19:18 pid:97380 worker[AccountCrawler:97381] exit with status 65280
+2018-01-14 22:19:19 pid:97380 Workerman[start.php] stopping ...
+2018-01-14 22:19:19 pid:97380 Workerman[start.php] has been stopped

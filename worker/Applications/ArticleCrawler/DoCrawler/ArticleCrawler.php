@@ -62,7 +62,7 @@ class ArticleCrawler{
 
             \Models\Article::model()->updateWorderId($accountArray['wx_id'], $worker_id);
             $content = self::gatherUrl($url);
-            file_put_contents('/tmp/'.$accountArray['wx_id'].'.html', $content);
+            file_put_contents('/tmp/'.$accountArray['wx_id'].'_msgList.html', $content);
             print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
             if($content === false){
                 \Models\Article::model()->updateWorderId($accountArray['wx_id'], 0);
@@ -78,6 +78,11 @@ class ArticleCrawler{
 //                var_dump($msgListArray);
             }
 
+            if(!isset($msgListArray['list'])){
+                print '疑似访问被封' . "\n";
+                \Models\Article::model()->updateWorderId($accountArray['wx_id'], 0);
+                return false;
+            }
 
 //            $html = self::parseHtml($content);
 //
@@ -112,9 +117,10 @@ class ArticleCrawler{
                     'comm_msg_info'             =>  json_encode($node['comm_msg_info']),
                     'publish_time'              =>  $node['comm_msg_info']['datetime']
                 ];
+                print json_encode($msgListArray) ."\n\n";
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
-                \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
-                \Models\Article::model()->updateWorderId($accountArray['wx_id'], 0);
+                \Models\OfficalAccount::model()->updateArticle(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
+                \Models\OfficalAccount::model()->updateWorderId($accountArray['wx_id'], 0);
             }
         }
 
