@@ -42,7 +42,9 @@ $capsule->bootEloquent();
 
 
 $app = new \Slim\App;
-$app->get('/acount/{id}', function (Request $request, Response $response, array $args) {
+
+
+$app->get('/account/{id}', function (Request $request, Response $response, array $args) {
     $id = $args['id'];
 
     $account = Capsule::table('offical_account')->where('wx_id', '=', $id)->get();
@@ -63,12 +65,48 @@ $app->get('/acount/{id}', function (Request $request, Response $response, array 
     return $response;
 });
 
-$app->get('/article/{id}', function (Request $request, Response $response, array $args) {
-    $name = $args['name'];
-    $response->getBody()->write("Hello, $name");
+$app->group('/article/', function () {
+    $this->get('/list/type/{type}[/{pageSize}[/{page}]]', function ($request, $response, $args) {
+        $type = $args['type'];
+        $pageSize = isset($args['pageSize']) ? $args['pageSize'] : 10;
+        $page = isset($args['page']) ? ($args['page'] - 1) * $pageSize : 0;
 
-    return $response;
+        $typeStr = '';
+        switch($type){
+            case 'lastest':
+                $typeStr = 'article_publish_time desc';
+                break;
+
+            default:
+                $typeStr = 'article_publish_time desc';
+        }
+
+        $article = Capsule::select("select * from articles where article_title <> '' order by ? limit ?,?", array($typeStr, $page, $pageSize));
+
+        $data = [
+            'data'      =>  $article,
+            'status'    =>  200,
+            'code'      =>  '',
+            'message'   =>  ''
+        ];
+        return $response->withJson($data, 200);
+    })->setName('list-article');
+
+    $this->get('/detail/{id}', function($request, $response, $args){
+        $id = $args['id'];
+
+        $article = Capsule::select("select * from articles where id = ? ", array($id));
+        $data = [
+            'data'      =>  $article,
+            'status'    =>  200,
+            'code'      =>  '',
+            'message'   =>  ''
+        ];
+        return $response->withJson($data, 200);
+    });
 });
+
+
 
 $app->get('/search/{key}/type/{type}', function (Request $request, Response $response, array $args) {
     $name = $args['key'];
