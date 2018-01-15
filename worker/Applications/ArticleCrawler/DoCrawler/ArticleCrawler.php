@@ -63,11 +63,11 @@ class ArticleCrawler{
             \Models\Article::model()->updateWorderId($accountArray['wx_id'], $worker_id);
             $content = self::gatherUrl($url);
             file_put_contents('/tmp/'.$accountArray['wx_id'].'_msgList.html', $content);
-            print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
             if($content === false){
                 \Models\Article::model()->updateWorderId($accountArray['wx_id'], 0);
                 return false;
             }
+            print $accountArray['wx_id'] . ':' . strlen($content) . "\n";
 
             preg_match('/msgList = ([\w\W]*?)};/', $content, $msgList);
             //var_dump($msgList);
@@ -98,26 +98,31 @@ class ArticleCrawler{
 
             foreach($msgListArray['list'] as $node){
 //                var_dump($node, $msgListArray);
-                $msgInfoArray = [
-                    'wx_id'                     =>  $accountArray['wx_id'],
-                    'article_id'                =>  $node['comm_msg_info']['id'],
-                    'title'                     =>  $node['app_msg_ext_info']['title'],
-                    'author'                    =>  $node['app_msg_ext_info']['author'],
-                    'content'                   =>  $node['app_msg_ext_info']['content'],
-                    'content_url'               =>  $node['app_msg_ext_info']['content_url'],
-                    'copyright_stat'            =>  $node['app_msg_ext_info']['copyright_stat'],
-                    'cover'                     =>  $node['app_msg_ext_info']['cover'],
-                    'del_flag'                  =>  $node['app_msg_ext_info']['del_flag'],
-                    'digest'                    =>  $node['app_msg_ext_info']['digest'],
-                    'fileid'                    =>  $node['app_msg_ext_info']['fileid'],
-                    'is_multi'                  =>  $node['app_msg_ext_info']['is_multi'],
-                    'multi_app_msg_item_list'   =>  json_encode($node['app_msg_ext_info']['multi_app_msg_item_list']),
-                    'source_url'                =>  $node['app_msg_ext_info']['source_url'],
-                    'subtype'                   =>  $node['app_msg_ext_info']['subtype'],
-                    'comm_msg_info'             =>  json_encode($node['comm_msg_info']),
-                    'publish_time'              =>  $node['comm_msg_info']['datetime']
-                ];
-//                print json_encode($msgListArray) ."\n\n";
+                try{
+                    $msgInfoArray = [
+                        'wx_id'                     =>  $accountArray['wx_id'],
+                        'article_id'                =>  $node['comm_msg_info']['id'],
+                        'title'                     =>  $node['app_msg_ext_info']['title'],
+                        'author'                    =>  $node['app_msg_ext_info']['author'],
+                        'content'                   =>  $node['app_msg_ext_info']['content'],
+                        'content_url'               =>  $node['app_msg_ext_info']['content_url'],
+                        'copyright_stat'            =>  $node['app_msg_ext_info']['copyright_stat'],
+                        'cover'                     =>  $node['app_msg_ext_info']['cover'],
+                        'del_flag'                  =>  $node['app_msg_ext_info']['del_flag'],
+                        'digest'                    =>  $node['app_msg_ext_info']['digest'],
+                        'fileid'                    =>  $node['app_msg_ext_info']['fileid'],
+                        'is_multi'                  =>  $node['app_msg_ext_info']['is_multi'],
+                        'multi_app_msg_item_list'   =>  json_encode($node['app_msg_ext_info']['multi_app_msg_item_list']),
+                        'source_url'                =>  $node['app_msg_ext_info']['source_url'],
+                        'subtype'                   =>  $node['app_msg_ext_info']['subtype'],
+                        'comm_msg_info'             =>  json_encode($node['comm_msg_info']),
+                        'publish_time'              =>  $node['comm_msg_info']['datetime']
+                    ];
+                }catch (\Exception $e){
+                    print json_encode($e) . "\n";
+                }
+
+                print $msgInfoArray['title'] ."\n";
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id']], $msgInfoArray);
             }
 
