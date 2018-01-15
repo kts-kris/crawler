@@ -14,6 +14,10 @@ use Illuminate\Database\Capsule\Manager as Capsule;
 require_once dirname(dirname(dirname(__DIR__))) . '/vendor/autoload.php';
 
 
+\Workerman\Protocols\Http::header('Access-Control-Allow-Origin: *');
+\Workerman\Protocols\Http::header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
+\Workerman\Protocols\Http::header('Access-Control-Allow-Methods: GET, POST, PUT,OPTIONS');
+
 $capsule = new Capsule;
 
 
