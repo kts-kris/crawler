@@ -126,7 +126,7 @@ class ArticleCrawler{
                 \Models\Article::model()->updateArticle(['wx_id' => $accountArray['wx_id'], 'article_id' => $msgInfoArray['article_id']], $msgInfoArray);
             }
 
-            \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id']], ['update_time' => $runTimeStr]);
+            \Models\OfficalAccount::model()->updateOfficalAccountInfo(['wx_id' => $accountArray['wx_id'], ['update_time' => $runTimeStr]]);
             \Models\OfficalAccount::model()->updateWorderId($accountArray['wx_id'], 0);
         }
 
