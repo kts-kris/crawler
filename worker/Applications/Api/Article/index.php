@@ -81,19 +81,24 @@ $app->group('/article', function () {
         $page = isset($args['page']) ? ($args['page'] - 1) * $pageSize : 0;
 
         $typeStr = '';
+        $whereStr = 'article_title IS NOT NULL';
         switch($type){
             case 'lastest':
                 $typeStr = 'article_publish_time';
                 $orderByStr = 'desc';
                 break;
-
+            case 'hot':
+                $whereStr .= ' and is_hot = 1';
+                $typeStr = 'article_publish_time';
+                $orderByStr = 'desc';
+                break;
             default:
                 $typeStr = 'article_publish_time';
                 $orderByStr = 'desc';
         }
         //$orderByStr = $typeStr . ' ' . $orderByStr;
         //Capsule::connection()->enableQueryLog();
-        $article = Capsule::table('articles')->selectRaw("pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar")->whereRaw("article_title IS NOT NULL")->orderby($typeStr, $orderByStr)->limit($pageSize)->get();
+        $article = Capsule::table('articles')->selectRaw("pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar")->whereRaw($whereStr)->orderby($typeStr, $orderByStr)->limit($pageSize)->get();
 //        $article = Capsule::select("select pid, articles.article_title, articles.article_brief, articles.article_thumbnail, articles.article_author, FROM_UNIXTIME(articles.article_publish_time, '%Y-%m-%d') as article_publish_time, articles.wx_title_cn, articles.wx_id, articles.weixin_avatar from articles where article_title IS NOT NULL order by ? limit ?,?", array($orderByStr, $page, $pageSize));
 //        $article = Articles::whereRaw("article_title IS NOT NULL")
 //                    ->orderBy($typeStr, $orderByStr)
